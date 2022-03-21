@@ -26,7 +26,7 @@ function Forum() {
         The Social Media App with Google Auth , Follow People , Create Posts and Let your followers know what you're upto!
       </p>
       <button className="text-black text-base bg-cyan-300 p-3 rounded-md hover:bg-cyan-500">
-        <a href={githubLinks.forum} target='_blank'>
+        <a href={githubLinks.forum} target='_blank' rel="noreferrer">
           View Github <GitHubIcon className="ml-1 text-[22px]" />
         </a>
       </button>

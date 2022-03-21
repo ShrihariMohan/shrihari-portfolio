@@ -26,7 +26,7 @@ function Medion() {
         Draft Js is used to create a Rich Text Editor.
       </p>
       <button className="text-black text-base bg-cyan-300 p-3 rounded-md hover:bg-cyan-500">
-        <a href={githubLinks.medion} target='_blank'>
+        <a href={githubLinks.medion} target='_blank' rel="noreferrer">
           View Github <GitHubIcon className="ml-1 text-[22px]" />
         </a>
       </button>
