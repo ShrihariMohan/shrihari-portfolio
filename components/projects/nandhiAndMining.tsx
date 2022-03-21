@@ -14,11 +14,9 @@ function NandhiAndMining() {
         <p className="text-3xl mb-4 font-bold tracking-wider"> Nandhi Mining & Company </p>
         <p className="text-slate-200 font-light mb-6"> It is one of the players in CNC Milling Machine, Hydraulic Milling Machine to name a few. </p>
         <p className=" tracking-wider mb-2"> About Website </p>
-        <p className="text-slate-200 font-light"> This is a website that helps the company to store all their Finances, Bills, Employees Details and their Payments.
+        <p className="text-slate-200 font-light"> This is a website that helps the company to store all their Finances, Bills, Employees Details and their Payments. This is a private organization so github repo is private.
           <a className="text-sm text-slate-400 hover:cursor-pointer" href={links.notion} target='_blank' rel="noreferrer"> For more information visit Notion </a> </p>
-        <Tooltip title='Private Repository' disableFocusListener disableInteractive enterTouchDelay={0} placement='top'>
-          <Button className="text-black text-base bg-slate-400 p-3 mt-6  rounded-md hover:cursor-not-allowed hover:bg-slate-400 transform-none capitalize" > View Github <GitHubIcon className="ml-1 text-[22px]" /></Button>
-        </Tooltip>
+
       </Grid>
 
       <Grid item xs={12} sm={4} md={5} sx={{ textAlign: { xs: 'center', sm: 'unset' } }}>

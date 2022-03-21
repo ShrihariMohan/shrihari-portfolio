@@ -1,9 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Landing from './components/landing'
-import NavBar from './components/navBar'
-import Projects from './components/projectsContainer'
+import Landing from '../components/landing'
+import NavBar from '../components/navBar'
+import Projects from '../components/projectsContainer'
 
 
 const Home: NextPage = () => {
