@@ -1,6 +1,5 @@
-import { Box, Button, Grid, Tooltip } from "@mui/material"
+import { Box, Grid } from "@mui/material"
 import Chips from "../chips"
-import GitHubIcon from '@mui/icons-material/GitHub';
 import { VideoDemoLinks } from "../../constants/videoDemoLinks";
 import { links } from "../../constants/contactLinks"
 
@@ -8,6 +7,8 @@ const stack = ['Nextjs', 'FireStore', 'Firebase Storage', 'Functions', 'Netlify'
 
 function NandhiAndMining() {
   return (
+
+
     <Grid container spacing={3} className="flex justify-between items-center mb-16 px-4 sm:px-0" sx={{ height: { sm: 'calc(100vh - 64px)' } }}>
       <Grid item xs={0} sm={2} md={1} />
       <Grid item xs={12} sm={4} md={5} sx={{ textAlign: { xs: 'center', sm: 'left' } }}>
@@ -35,7 +36,6 @@ function NandhiAndMining() {
         </Box>
       </Grid>
       <Grid item xs={0} sm={2} md={1} />
-
     </Grid>
   )
 }
