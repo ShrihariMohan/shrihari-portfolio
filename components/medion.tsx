@@ -1,13 +1,15 @@
 import { Box, Grid } from "@mui/material"
-import Chips from "../chips"
+import Chips from "./chips"
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { githubLinks, links } from "../../constants/contactLinks"
-import { VideoDemoLinks } from "../../constants/videoDemoLinks";
+import { githubLinks, links } from "../constants/contactLinks"
+import { VideoDemoLinks } from "../constants/videoDemoLinks";
+import AboveTitle from "./Typograpy/aboveTitle";
 const stack = ['React', 'DraftJS', 'Material UI', 'MongoDB', 'NodeJS', 'Express']
 
 function Medion() {
   return (
-    <Box sx={{ mr: { xs: 0, sm: 2 }, textAlign: { xs: 'center', sm: 'unset' } }}>
+    <Box sx={{ mr: { xs: 0, sm: 2 } }}>
+      <AboveTitle text="Project" />
       <p className="text-3xl font-bold tracking-wider mb-3"> Medion  </p>
       <video src={VideoDemoLinks.medion}
         width={500} height={500} controls className="text-center mx-auto block  sm:mx-0 sm:text-left rounded-md mb-1 ">
@@ -21,7 +23,7 @@ function Medion() {
           })
         }
       </Box>
-      <p className="text-slate-200 font-light mb-6">
+      <p className="text-slate-200 font-light mb-6 h-18">
         This is an simple text-editor app. Draft Js is Developed and Maintaned By Facebook Open source.
         Draft Js is used to create a Rich Text Editor.
       </p>

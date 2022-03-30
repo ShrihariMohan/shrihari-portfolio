@@ -1,17 +1,19 @@
 import { Box } from "@mui/material"
-import { githubLinks } from "../../constants/contactLinks"
-import { VideoDemoLinks } from "../../constants/videoDemoLinks"
+import { githubLinks } from "../constants/contactLinks"
+import { VideoDemoLinks } from "../constants/videoDemoLinks"
 import GitHubIcon from '@mui/icons-material/GitHub';
-import Chips from "../chips"
+import Chips from "./chips"
+import AboveTitle from "./Typograpy/aboveTitle";
 
 const stack = ['Angular Framework', 'Material', 'MongoDB', 'NodeJS', 'Express']
 
 function Forum() {
   return (
     <>
+      <AboveTitle text="Project" />
       <p className="text-3xl font-bold tracking-wider mb-3">Forum</p>
       <video src={VideoDemoLinks.forum}
-        width={500} height={500} controls className="block text-center mx-auto sm:text-left sm:mx-0 rounded-md mb-1">
+        width={500} height={500} controls className="block  mx-auto  sm:mx-0 rounded-md mb-1">
       </video>
       <Box className="mb-4">
         {
@@ -22,7 +24,7 @@ function Forum() {
           })
         }
       </Box>
-      <p className="text-slate-200 font-light mb-6">
+      <p className="text-slate-200 font-light mb-6 h-18">
         The Social Media App with Google Auth , Follow People , Create Posts and Let your followers know what you're upto!
       </p>
       <button className="text-black text-base bg-cyan-300 p-3 rounded-md hover:bg-cyan-500">

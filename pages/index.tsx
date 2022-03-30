@@ -6,6 +6,7 @@ import NavBar from '../components/navBar'
 import Projects from '../components/projectsContainer'
 import { createRef, useEffect, useRef, useState } from 'react'
 import SplashScreen from '../components/splashScreen'
+import OpenSourceProjects from '../components/opensourceProjects'
 
 
 interface MutableRefObject<T> {
@@ -16,7 +17,7 @@ const Home: NextPage = () => {
   const projectsRef: any = useRef<HTMLDivElement>(null)
   const [showSplashScreen, setShowSplashScreen] = useState<boolean>(true)
   const onScrollToProjects = () => {
-    projectsRef.current.scrollIntoView({ behavior: 'smooth' })
+    projectsRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' })
   }
 
   useEffect(() => {
@@ -27,9 +28,9 @@ const Home: NextPage = () => {
     setTimeout(() => {
       sessionStorage.setItem("showSplashScreen", "false");
       setShowSplashScreen(false)
-    }, 3000);
+    }, 1);
     // }
-  })
+  }, [])
 
   return (
     <>
@@ -61,15 +62,18 @@ const Home: NextPage = () => {
           <SplashScreen /> :
           <>
             <NavBar />
-            <div className='snap snap-y snap-proximity'>
-              <section className='snap-start relative' >
+
+            <section className=' mb-24' >
                 <Landing onSeeProjects={onScrollToProjects} />
               </section>
 
-              <section className='snap-start relative'>
-                <Projects ref={projectsRef} />
-              </section>
-            </div>
+            <section className='mb-24'>
+              <OpenSourceProjects ref={projectsRef} />
+            </section>
+
+            <section className=''>
+              <Projects />
+            </section>
           </>
         }
       </main>

@@ -1,15 +1,14 @@
-import React from "react"
-import MedionAndForumContainer from "./projects/medionAndForumContainer"
-import NandhiAndMining from "./projects/nandhiAndMining"
+import MedionAndForumContainer from "./medionAndForumContainer"
+import NandhiAndMining from "./nandhiAndMining"
 
-const Projects = React.forwardRef<HTMLDivElement>((props, ref) => {
+function Projects() {
   return (
-    <div style={{ paddingTop: 32 }} ref={ref}>
+    <div style={{ paddingTop: 32 }} >
       <NandhiAndMining />
       <MedionAndForumContainer />
     </div>
   )
 
-})
+}
 
 export default Projects

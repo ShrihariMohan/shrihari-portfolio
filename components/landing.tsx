@@ -3,6 +3,8 @@ import Image from "next/image"
 import RemoveRedEyeOutlinedIcon from '@mui/icons-material/RemoveRedEyeOutlined';
 import { Box, Grid } from "@mui/material";
 import Link from "next/link";
+import AboveTitle from "./Typograpy/aboveTitle";
+import PrimaryButton from "./Buttons/primaryButton";
 function Landing({ onSeeProjects }: { onSeeProjects: Function }) {
 
   return (
@@ -10,15 +12,12 @@ function Landing({ onSeeProjects }: { onSeeProjects: Function }) {
       <Grid item xs={0} sm={2} />
       <Grid item xs={12} sm={4} >
         <Box sx={{ textAlign: { xs: 'center', sm: 'left' } }} >
-          <span className="text-slate-500 font-light border-t-2 border-cyan-600 pt-1 mb-2"> Wabba Lubba Dubb Dubb</span>
+          <AboveTitle text="Let's go man!" />
           <h1 className="text-5xl font-semibold text-primary mb-2 tracking-wide">
-            Websites promote you  24/7
+            Full Stack Web Developer
           </h1>
           <p className="text-slate-300 font-light" >You never know what you can do!</p>
-          <button onClick={() => onSeeProjects()} className="bg-cyan-300 p-4 mt-6 text-black rounded-md hover:bg-cyan-500 cursor-pointer">
-            <RemoveRedEyeOutlinedIcon /> See Projects
-            <Link href="#project-section"><a> </a></Link>
-          </button>
+          <PrimaryButton text="See Contributions" icon={<RemoveRedEyeOutlinedIcon className="align-top" />} onClick={() => onSeeProjects()} />
         </Box>
       </Grid>
       <Grid item xs={0} sm={4} sx={{ display: { xs: 'none ', sm: 'block' } }} justifySelf='center' className="text-right">
