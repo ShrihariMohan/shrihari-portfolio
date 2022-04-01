@@ -5,18 +5,22 @@ import { Box, Grid } from "@mui/material";
 import Link from "next/link";
 import AboveTitle from "./Typograpy/aboveTitle";
 import PrimaryButton from "./Buttons/primaryButton";
+import { motion } from "framer-motion"
+
+
 function Landing({ onSeeProjects }: { onSeeProjects: Function }) {
 
   return (
-    <Grid container spacing={2} className="px-4 sm:px-0 flex justify-center items-center" sx={{ height: 'calc(100vh - 64px)' }}>
+    <motion.div
+    >
+      <Grid container className="px-4 sm:px-0 flex justify-center items-center" sx={{ height: 'calc(100vh - 64px)' }}>
       <Grid item xs={0} sm={2} />
       <Grid item xs={12} sm={4} >
         <Box sx={{ textAlign: { xs: 'center', sm: 'left' } }} >
-          <AboveTitle text="Let's go man!" />
-          <h1 className="text-5xl font-semibold text-primary mb-2 tracking-wide">
-            Full Stack Web Developer
-          </h1>
-          <p className="text-slate-300 font-light" >You never know what you can do!</p>
+            <AboveTitle text="Full Stack web developer" />
+            <h1 className="text-3xl font-semibold mt-2 tracking-wide">
+              I Stack your Problems and pop 🎉 until its Empty
+            </h1>
           <PrimaryButton text="See Contributions" icon={<RemoveRedEyeOutlinedIcon className="align-top" />} onClick={() => onSeeProjects()} />
         </Box>
       </Grid>
@@ -29,6 +33,7 @@ function Landing({ onSeeProjects }: { onSeeProjects: Function }) {
       <Grid item xs={0} sm={2} />
 
     </Grid>
+    </motion.div >
   )
 }
 

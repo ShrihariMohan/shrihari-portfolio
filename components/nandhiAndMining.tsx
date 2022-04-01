@@ -3,11 +3,18 @@ import Chips from "./chips"
 import { VideoDemoLinks } from "../constants/videoDemoLinks";
 import { links } from "../constants/contactLinks"
 import AboveTitle from "./Typograpy/aboveTitle";
+import { motion } from "framer-motion"
 
 const stack = ['Nextjs', 'FireStore', 'Firebase Storage', 'Functions', 'Netlify', 'Github & Projects']
 
 function NandhiAndMining() {
   return (
+
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+    >
 
     <Grid container className="flex justify-between items-center mb-16 px-4 sm:px-0" sx={{ height: { sm: 'calc(100vh - 64px)' } }}>
       <Grid item xs={0} sm={1} md={1} />
@@ -38,6 +45,8 @@ function NandhiAndMining() {
       </Grid>
       <Grid item xs={0} sm={1} md={1} />
     </Grid>
+    </motion.div>
+
   )
 }
 

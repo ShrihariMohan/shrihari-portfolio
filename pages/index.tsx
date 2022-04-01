@@ -17,7 +17,9 @@ const Home: NextPage = () => {
   const projectsRef: any = useRef<HTMLDivElement>(null)
   const [showSplashScreen, setShowSplashScreen] = useState<boolean>(true)
   const onScrollToProjects = () => {
-    projectsRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' })
+    let block = 'start'
+    if (window.screen.width > 768) block = 'center'
+    projectsRef.current.scrollIntoView({ behavior: 'smooth', block })
   }
 
   useEffect(() => {
