@@ -4,11 +4,17 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import { githubLinks, links } from "../constants/contactLinks"
 import { VideoDemoLinks } from "../constants/videoDemoLinks";
 import AboveTitle from "./Typograpy/aboveTitle";
+import PrimaryButton from "./Buttons/primaryButton";
 const stack = ['React', 'DraftJS', 'Material UI', 'MongoDB', 'NodeJS', 'Express']
 
 function Medion() {
+
+  const onClick = () => {
+    window.open(githubLinks.medion)
+  }
+
   return (
-    <Box sx={{ mr: { xs: 0, sm: 2 } }}>
+    <Box sx={{ mr: { xs: 0, sm: 2 } }} mb={3}>
       <AboveTitle text="Project" />
       <p className="text-3xl font-bold tracking-wider mb-3"> Medion  </p>
       <video src={VideoDemoLinks.medion}
@@ -23,15 +29,14 @@ function Medion() {
           })
         }
       </Box>
-      <p className="text-slate-200 font-light mb-6 h-18">
+      <p className="text-slate-200 font-light mb-6 max-w-[500px]">
         This is an simple text-editor app. Draft Js is Developed and Maintaned By Facebook Open source.
         Draft Js is used to create a Rich Text Editor.
       </p>
-      <button className="text-black text-base bg-cyan-300 p-3 rounded-md hover:bg-cyan-500">
-        <a href={githubLinks.medion} target='_blank' rel="noreferrer">
-          View Github <GitHubIcon className="ml-1 text-[22px]" />
-        </a>
-      </button>
+
+      <Box sx={{ textAlign: { xs: 'center', sm: 'unset' } }}>
+        <PrimaryButton text="View Github" icon={<GitHubIcon className="ml-1 text-[22px]" />} onClick={onClick} />
+      </Box>
     </Box>
   )
 }

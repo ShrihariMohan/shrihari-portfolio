@@ -11,11 +11,10 @@ function PrimaryButton({ text, onClick, icon }: PrimaryButtonProps) {
     <motion.button
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
+      className="bg-cyan-300 p-3  text-black rounded-lg hover:bg-cyan-500 cursor-pointer"
+      onClick={onClick}
     >
-    <button onClick={onClick}
-      className="bg-cyan-300 p-3 mt-6 text-black rounded-lg hover:bg-cyan-500 cursor-pointer">
       {icon ? icon : ''}  {text}
-    </button>
     </motion.button>
   )
 }

@@ -7,20 +7,28 @@ import Projects from '../components/projectsContainer'
 import { createRef, useEffect, useRef, useState } from 'react'
 import SplashScreen from '../components/splashScreen'
 import OpenSourceProjects from '../components/opensourceProjects'
+import Footer from '../components/footer'
 
 
-interface MutableRefObject<T> {
-  current: T | null
-}
 
 const Home: NextPage = () => {
   const projectsRef: any = useRef<HTMLDivElement>(null)
+  const aboutRef: any = useRef<HTMLDivElement>(null)
+
   const [showSplashScreen, setShowSplashScreen] = useState<boolean>(true)
+
+
   const onScrollToProjects = () => {
     let block = 'start'
     if (window.screen.width > 768) block = 'center'
     projectsRef.current.scrollIntoView({ behavior: 'smooth', block })
   }
+
+  const onScrollToabout = () => {
+    aboutRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+
+
 
   useEffect(() => {
     // if (sessionStorage.getItem("showSplashScreen")) {
@@ -63,18 +71,22 @@ const Home: NextPage = () => {
         {showSplashScreen ?
           <SplashScreen /> :
           <>
-            <NavBar />
+            <NavBar onSeeContact={onScrollToabout} />
 
             <section className=' mb-24' >
-                <Landing onSeeProjects={onScrollToProjects} />
+              <Landing onSeeProjects={onScrollToProjects} />
               </section>
 
-            <section className='mb-24'>
+            <section >
               <OpenSourceProjects ref={projectsRef} />
             </section>
 
-            <section className=''>
+            <section >
               <Projects />
+            </section>
+
+            <section>
+              <Footer ref={aboutRef} />
             </section>
           </>
         }

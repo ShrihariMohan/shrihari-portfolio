@@ -31,7 +31,7 @@ const OpenSourceProjects = React.forwardRef<HTMLDivElement>((props, ref) => {
     >
       <Grid container justifyContent='center' alignItems='center' ref={ref} >
 
-      <Grid item xs={12} sm={8} md={5} className="mb-24 px-4">
+        <Grid item xs={12} sm={8} md={5} mb={6} className="px-4">
         <AboveTitle text='Open Source, Freelance' />
         <Title text="Squeeth Portal" />
         <div className=" drop-shadow-md  hover:scale-105 hover:transition-transform">
@@ -39,7 +39,7 @@ const OpenSourceProjects = React.forwardRef<HTMLDivElement>((props, ref) => {
             <Image src='/squeeth.jpeg' width={450} height={250} className="rounded-lg" />
           </a>
         </div>
-        <div className="mt-3 max-w-[450px]" >
+          <div className="mt-4 max-w-[450px]" >
             <div className="flex justify-between">
               <div>
 
@@ -68,12 +68,12 @@ const OpenSourceProjects = React.forwardRef<HTMLDivElement>((props, ref) => {
 
           </p>
         </div>
-        <div className="flex justify-start gap-4">
+          <div className="flex justify-start gap-4 mt-6">
           <OutlinedButton text="View Github" icon={<GitHubIcon className="align-top" />} onClick={onViewGitOfSqueeth} />
           <PrimaryButton text="Visit Website" icon={<LanguageIcon className="align-top" />} onClick={() => window.open('https://www.squeethportal.xyz/')} />
         </div>
       </Grid>
-        <Grid item xs={12} sm={8} md={5} className="mb-24 px-4">
+        <Grid item xs={12} sm={8} md={5} mb={4} className=" px-4">
         <AboveTitle text='Open Source' />
         <Title text="PvZ 2 Api" />
 
@@ -82,7 +82,7 @@ const OpenSourceProjects = React.forwardRef<HTMLDivElement>((props, ref) => {
             <Image src='/pvz.jpeg' width={450} height={250} objectFit="cover" className="rounded-lg" />
           </a>
         </div>
-        <div className="mt-3 max-w-[450px]" >
+          <div className="mt-4 max-w-[450px]" >
 
             <div className="flex justify-between">
               <div>
@@ -109,7 +109,7 @@ const OpenSourceProjects = React.forwardRef<HTMLDivElement>((props, ref) => {
 
           </p>
         </div>
-        <div className="flex justify-start gap-4">
+          <div className="flex justify-start gap-4 mt-6">
           <OutlinedButton text="View Github" icon={<GitHubIcon className="align-top" />} onClick={onViewGitOfPvz} />
           <PrimaryButton text="Visit Website" icon={<LanguageIcon className="align-top" />} onClick={() => window.open('https://pvz-2-api.vercel.app/')} />
         </div>
