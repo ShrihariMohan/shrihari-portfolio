@@ -2,7 +2,7 @@ import { Grid } from "@mui/material";
 import React from "react";
 import { links, moreLinks } from "../../constants/contactLinks";
 export function FirstCol({ }) {
-  return <Grid item xs={12} sm={6} md={5} mb={4}>
+  return <Grid item xs={12} sm={6} md={3}>
 
 
     <p className=" text-slate-400 mb-2"> Currently working in <a href={moreLinks.company} target='_blank'> <span className="text-cyan-400 font-bold">
