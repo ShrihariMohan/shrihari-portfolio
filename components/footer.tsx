@@ -14,9 +14,9 @@ import Facebook from './Social/facebook';
 const Footer = React.forwardRef<HTMLDivElement>((props, ref) => {
   return (
     <footer className="bg-gray-900 w-full pt-6  px-3" >
-      <h1 className='text-2xl text-center mb-8' style={{ fontFamily: 'Satisfy, cursive' }}> About & Other Stuff</h1>
+      <h1 className='text-2xl text-center mb-8 tracking-widest' style={{ fontFamily: 'Satisfy, cursive' }}> About & Other Stuff</h1>
       <Grid container sx={{ flexDirection: 'column' }} ref={ref}>
-        <Grid container mb={2} justifyContent='center'>
+        <Grid container mb={2} justifyContent='center' spacing={2}>
           <FirstCol />
           <SecondCol />
         </Grid>
@@ -29,7 +29,7 @@ const Footer = React.forwardRef<HTMLDivElement>((props, ref) => {
           <LinkedIn />
           <Email />
         </Box>
-        <p className='text-center text-slate-600 mt-4'> Feel Free to use this as a <a href='https://github.com/ShrihariMohan/shrihari-portfolio' className='cursor-pointer text-cyan-600 hover:scale-110' target='_blank'> template</a> for your portfolio</p>
+        <p className='text-center text-slate-600 mt-4 mb-2'> Feel Free to use this as a <a href='https://github.com/ShrihariMohan/shrihari-portfolio' className='cursor-pointer text-cyan-600 hover:scale-110' target='_blank'> template</a> for your portfolio</p>
       </Grid>
     </footer>
   )

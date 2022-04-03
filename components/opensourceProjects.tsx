@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Grid, Tooltip } from "@mui/material";
+import { Box, Grid, Tooltip } from "@mui/material";
 import Title from "./Typograpy/title";
 import AboveTitle from "./Typograpy/aboveTitle";
 import React from "react"
@@ -68,10 +68,10 @@ const OpenSourceProjects = React.forwardRef<HTMLDivElement>((props, ref) => {
 
           </p>
         </div>
-          <div className="flex justify-start gap-4 mt-6">
+          <Box className="flex gap-4 mt-6" sx={{ justifyContent: { xs: 'center', sm: 'start' } }}>
           <OutlinedButton text="View Github" icon={<GitHubIcon className="align-top" />} onClick={onViewGitOfSqueeth} />
           <PrimaryButton text="Visit Website" icon={<LanguageIcon className="align-top" />} onClick={() => window.open('https://www.squeethportal.xyz/')} />
-        </div>
+          </Box>
       </Grid>
         <Grid item xs={12} sm={8} md={5} mb={4} className=" px-4">
         <AboveTitle text='Open Source' />
@@ -109,10 +109,10 @@ const OpenSourceProjects = React.forwardRef<HTMLDivElement>((props, ref) => {
 
           </p>
         </div>
-          <div className="flex justify-start gap-4 mt-6">
+          <Box className="flex gap-4 mt-6" sx={{ justifyContent: { xs: 'center', sm: 'start' } }}>
           <OutlinedButton text="View Github" icon={<GitHubIcon className="align-top" />} onClick={onViewGitOfPvz} />
           <PrimaryButton text="Visit Website" icon={<LanguageIcon className="align-top" />} onClick={() => window.open('https://pvz-2-api.vercel.app/')} />
-        </div>
+          </Box>
 
       </Grid>
 
