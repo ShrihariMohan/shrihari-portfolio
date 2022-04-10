@@ -21,5 +21,8 @@ export function SecondCol({ }) {
     <p className="text-slate-400 mb-2"> Need a professional resume ?<a href="/ShrihariResume.pdf" target='_blank'>  <span className="text-emerald-400 font-bold"> Download </span>
     </a></p>
 
+    <p className="text-slate-400 mb-2"> View profile on <a href="https://angel.co/u/shrihari-uma" target='_blank'>  <span className="text-lime-400 font-bold"> Angel List </span>
+    </a> </p>
+
   </Grid >;
 }
