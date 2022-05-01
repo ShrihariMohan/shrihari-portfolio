@@ -17,7 +17,7 @@ export const githubLinks = {
 }
 
 export const moreLinks = {
-  devto: "https://dev.to/shrihari/top-pwa-apps-i-use-everyday-laptop--4pbn",
+  devto: "https://dev.to/shrihari/colors-design-inspiration-websites-for-new-comers-1lcb",
   book: "https://www.refactoringui.com/book",
   company: 'https://www.varivas.in/',
   music: 'https://music.youtube.com/playlist?list=PLZFuu_CjnMTXMZPlXB10YbupUl8lhZBsc&feature=share',
