@@ -16,9 +16,9 @@ function NandhiAndMining() {
       viewport={{ once: true }}
     >
 
-    <Grid container className="flex justify-between items-center mb-16 px-4 sm:px-0" sx={{ height: { sm: 'calc(100vh - 64px)' } }}>
+      <Grid container className="flex justify-center items-center mb-16 px-4 sm:px-0" sx={{ height: { sm: 'calc(100vh - 64px)' } }}>
       <Grid item xs={0} sm={1} md={1} />
-      <Grid item xs={12} sm={5} md={5} className="mb-8">
+        <Grid item xs={12} sm={5} md={4} className="mb-8 mr-4">
         <AboveTitle text="Freelance" />
         <p className="text-3xl mb-4 font-bold tracking-wider"> Nandhi Mining & Company </p>
         <p className="text-slate-200 font-light mb-6"> It is one of the players in CNC Milling Machine, Hydraulic Milling Machine to name a few. </p>
@@ -28,7 +28,7 @@ function NandhiAndMining() {
 
       </Grid>
 
-      <Grid item xs={12} sm={5} md={5} sx={{ textAlign: { xs: 'center', sm: 'unset' } }}>
+        <Grid item xs={12} sm={5} md={4} sx={{ textAlign: { xs: 'center', sm: 'unset' } }}>
         <video src={VideoDemoLinks.nandhi}
           width={500} controls className="rounded-md block mx-auto" >
         </video>

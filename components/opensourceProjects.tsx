@@ -30,8 +30,8 @@ const OpenSourceProjects = React.forwardRef<HTMLDivElement>((props, ref) => {
       viewport={{ once: true }}
     >
       <Grid container justifyContent='center' alignItems='center' ref={ref} >
-
-        <Grid item xs={12} sm={8} md={5} mb={6} className="px-4">
+        <Grid item xs={0} sm={0} md={1} />
+        <Grid item xs={12} sm={8} md={5} mb={4} className="px-4">
         <AboveTitle text='Open Source, Freelance' />
         <Title text="Squeeth Portal" />
         <div className=" drop-shadow-md  hover:scale-105 hover:transition-transform">
@@ -60,9 +60,6 @@ const OpenSourceProjects = React.forwardRef<HTMLDivElement>((props, ref) => {
               </span>
             </Tooltip>
             </div>
-
-
-
             <p className="mt-2 text-slate-300">
               An alternate app to interact with squeeth contracts and a single place for all your squeeths !
 
@@ -113,9 +110,7 @@ const OpenSourceProjects = React.forwardRef<HTMLDivElement>((props, ref) => {
           <OutlinedButton text="View Github" icon={<GitHubIcon className="align-top" />} onClick={onViewGitOfPvz} />
           <PrimaryButton text="Visit Website" icon={<LanguageIcon className="align-top" />} onClick={() => window.open('https://pvz-2-api.vercel.app/')} />
           </Box>
-
       </Grid>
-
 
     </Grid >
     </motion.div>

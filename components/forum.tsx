@@ -31,7 +31,7 @@ function Forum() {
         }
       </Box>
       <p className="text-slate-200 font-light mb-6 max-w-[500px]">
-        The Social Media App with Google Auth , Follow People , Create Posts and Let your followers know what you're upto!
+        The Social Media App with Google Auth 2.0 using passport js, Follow People , Create and edit Posts and Let your followers know what you're upto!
       </p>
       <Box sx={{ textAlign: { xs: 'center', sm: 'unset' } }}>
 
