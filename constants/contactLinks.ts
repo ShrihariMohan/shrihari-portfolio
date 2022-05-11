@@ -5,7 +5,9 @@ export const links = {
   github: 'https://github.com/ShrihariMohan',
   notion: 'https://octagonal-pleasure-03e.notion.site/Shrihari-Mohan-fad1e848562e45ca90f9dc5dab7835dd',
   reddit: 'https://www.reddit.com/user/WabbaLubbaDubDbb',
-  facebook: 'https://www.facebook.com/shriharipapa/'
+  facebook: 'https://www.facebook.com/shriharipapa/',
+  devto: 'https://dev.to/shrihari',
+  medium: 'https://medium.com/@shriharimohan'
 }
 
 export const githubLinks = {

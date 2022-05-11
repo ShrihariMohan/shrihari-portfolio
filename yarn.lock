@@ -148,10 +148,10 @@
     "@babel/helper-validator-identifier" "^7.16.7"
     to-fast-properties "^2.0.0"
 
-"@dhaiwat10/react-link-preview@^1.13.1":
-  version "1.13.1"
-  resolved "https://registry.yarnpkg.com/@dhaiwat10/react-link-preview/-/react-link-preview-1.13.1.tgz#89300fd4f15d91df9e58f939ba80b310d4cacea9"
-  integrity sha512-WbZkWPpwCq86Wk/hdy9sWMR8XF1SN21urewDvUQYZTzmL9Z00955d/1qM1x0/yBNQoWajJyhFBPeCl9KI/ZdEQ==
+"@dhaiwat10/react-link-preview@^1.14.0":
+  version "1.14.0"
+  resolved "https://registry.yarnpkg.com/@dhaiwat10/react-link-preview/-/react-link-preview-1.14.0.tgz#625b3fc6dbbce8e0c10a023497f917bc0c57f880"
+  integrity sha512-TGzeO5EE3OIuFxf8IV/aNRH5/0itcb9zG2jLuBcqRgZIxcpn0jOJd+G/LpAGapkG8u91Yju09x//By+hENWuTA==
   dependencies:
     react-loading-skeleton "^2.2.0"
 

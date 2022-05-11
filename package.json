@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@dhaiwat10/react-link-preview": "^1.13.1",
+    "@dhaiwat10/react-link-preview": "^1.14.0",
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
     "@emotion/utils": "^1.1.0",
