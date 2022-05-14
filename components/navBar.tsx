@@ -1,7 +1,7 @@
 import React from 'react'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import Link from 'next/link';
-function NavBar({ onSeeContact, showNavItems = true }: { onSeeContact?: any, showNavItems?: boolean }) {
+function NavBar({ onSeeAbout, showNavItems = true, showBlogsItems = true, showAboutItems = true }: { onSeeAbout?: any, showNavItems?: boolean, showBlogsItems?: boolean, showAboutItems?: boolean }) {
   return (
     <nav className='py-4 md:px-12 px-6 text-lg sticky top-0 h-[60px] backdrop-blur-md	z-10' >
       <ul className='flex justify-between items-center'>
@@ -10,12 +10,18 @@ function NavBar({ onSeeContact, showNavItems = true }: { onSeeContact?: any, sho
         </Link>
         {
           showNavItems && <div>
-            <Link href='/blogs' >
+            {
+              showBlogsItems &&
+              <Link href='/blogs' >
               <span className="cursor-pointer tracking-widest font-bold mr-4" style={{ fontFamily: 'Satisfy, cursive' }}> Blogs </span>
             </Link>
-            <button onClick={onSeeContact} className="cursor-pointer tracking-widest font-bold" style={{ fontFamily: 'Satisfy, cursive' }}>
+            }
+            {
+              showAboutItems &&
+              <button onClick={onSeeAbout} className="cursor-pointer tracking-widest font-bold" style={{ fontFamily: 'Satisfy, cursive' }}>
               About
             </button>  
+            }
           </div>
         }
       </ul>

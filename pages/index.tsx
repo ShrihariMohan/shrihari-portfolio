@@ -10,7 +10,6 @@ import OpenSourceProjects from '../components/opensourceProjects'
 import Footer from '../components/footer'
 
 
-
 const Home: NextPage = () => {
   const projectsRef: any = useRef<HTMLDivElement>(null)
   const aboutRef: any = useRef<HTMLDivElement>(null)
@@ -71,7 +70,7 @@ const Home: NextPage = () => {
         {showSplashScreen ?
           <SplashScreen /> :
           <>
-            <NavBar onSeeContact={onScrollToabout} />
+            <NavBar onSeeAbout={onScrollToabout} />
 
             <section className=' mb-24' >
               <Landing onSeeProjects={onScrollToProjects} />

@@ -19,12 +19,12 @@ function BlogLanding({ onViewBlogs }: { onViewBlogs?: Function }) {
         <Grid item xs={12} sm={4} >
           <Box sx={{ textAlign: { xs: 'center', sm: 'left' } }} >
             <AboveTitle text="Content Writer" />
-            <h1 className="text-3xl font-semibold mt-2 tracking-wide mb-4">
-              Hey there lets go man!
+            <h1 className="text-3xl font-semibold mt-2 tracking-wide mb-4 ">
+              I write stuff on DevTo and Medium
             </h1>
-            <section className="flex justify-start  mb-4">
-              <p className="mr-3 text-slate-300">Follow <a href={links.devto} target='_blank' className="text-cyan-500">@devto</a></p>
-              <p className="text-slate-300">Follow <a href={links.medium} target='_blank' className="text-cyan-500">@medium </a></p>
+            <section className="flex justify-center sm:justify-start mb-4">
+              <p className="mr-3 text-slate-300">Follow <a href={links.devto} target='_blank' className="text-cyan-500">@Devto</a></p>
+              <p className="text-slate-300">Follow <a href={links.medium} target='_blank' className="text-cyan-500">@Medium </a></p>
             </section>
             <PrimaryButton text="View Blogs" icon={<RemoveRedEyeOutlinedIcon className="align-top" />} onClick={onViewBlogs} />
           </Box>
