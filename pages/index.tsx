@@ -45,8 +45,6 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title >Shrihari</title>
-        <link rel="icon" href="/favicon.ico" />
-
         <meta name="theme-color" content="#22d3ee" />
         <meta name="title" content="Shrihari M" />
         <meta name="description" content="Wabba Lubba Dubb Dub" />
@@ -63,6 +61,7 @@ const Home: NextPage = () => {
         <meta property="twitter:description" content="Wabba Lubba Dubb Dub" />
         <meta property="twitter:image" content="https://i.ibb.co/tzRTstD/shrihari-portfolio-og-image.png" />
 
+        <link rel='icon' href="https://img.icons8.com/color/48/000000/morty-smith.png" type='image/x-icon'></link>
       </Head>
 
       <main className='flex justify-center flex-col mx-auto scroll-smooth' data-scroll-container>

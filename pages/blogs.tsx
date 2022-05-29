@@ -29,7 +29,6 @@ const Blogs: NextPage = ({ data }: any) => {
     <>
       <Head>
         <title >Shrihari</title>
-        <link rel="icon" href="/favicon.ico" />
 
         <meta name="theme-color" content="#22d3ee" />
         <meta name="title" content="Shrihari Blogs" />

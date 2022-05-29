@@ -29,9 +29,9 @@ function BlogLanding({ onViewBlogs }: { onViewBlogs?: Function }) {
             <PrimaryButton text="View Blogs" icon={<RemoveRedEyeOutlinedIcon className="align-top" />} onClick={onViewBlogs} />
           </Box>
         </Grid>
-        <Grid item xs={0} sm={4} sx={{ display: { xs: 'none ', sm: 'block' } }} justifySelf='center' className="text-right">
+        <Grid item xs={0} sm={4} sx={{ display: { xs: 'non', sm: 'block' } }} justifySelf='center' className="text-right">
           <picture>
-            <Image className="hidden" src='/blogs.svg' height={400} width={400} alt='illustration space ship abducting' />
+            <Image className="hidden" src='/blog_illustration.svg' height={400} width={400} alt='illustration space ship abducting' />
             <p className="text-slate-500 text-xs text-center"> Art from <a className="text-slate-400 underline" href="https://undraw.co/" target='_blank' rel="noreferrer"> undraw</a></p>
           </picture>
         </Grid>
