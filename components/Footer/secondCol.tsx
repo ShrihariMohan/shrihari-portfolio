@@ -26,11 +26,11 @@ export function SecondCol({ }) {
       </span>
     </a></p>
 
-    <p className="text-slate-400 mb-2"> View profile on <a href="https://angel.co/u/shrihari-uma" target='_blank'>
+    {/* <p className="text-slate-400 mb-2"> View profile on <a href="https://angel.co/u/shrihari-uma" target='_blank'>
       <span className="font-bold text-slate-300">
         Angel List
       </span>
-    </a> </p>
+    </a> </p> */}
 
   </Grid >;
 }

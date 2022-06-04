@@ -11,13 +11,13 @@ export function FirstCol({ }) {
     </a>
     </p>
 
-    <p className="text-slate-400 mb-2"> Recent write up on
+    {/* <p className="text-slate-400 mb-2"> Recent write up on
       <a href={moreLinks.devto} target='_blank'>  &nbsp;
         <span className="font-bold text-slate-300">
           Dev.to
         </span>
       </a>
-    </p>
+    </p> */}
 
 
 

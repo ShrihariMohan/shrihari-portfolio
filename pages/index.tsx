@@ -1,3 +1,4 @@
+import { Mentions } from './../components/Mentions';
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
@@ -81,6 +82,11 @@ const Home: NextPage = () => {
 
             <section >
               <Projects />
+            </section>
+
+            <section>
+
+              <Mentions />
             </section>
 
             <section>
