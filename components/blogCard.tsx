@@ -8,7 +8,7 @@ import { IDev } from "../types/devToTypes";
 
 function BlogCard({ obj }: { obj: IDev }) {
   return (
-    <div className="border-2 rounded-lg border-slate-600 m-4 cursor-pointer drop-shadow-2xl max-w-[470]  hover:scale-105 hover:transition-transform" onClick={() => window.open(obj.url)} style={{ maxWidth: 450 }}>
+    <div className="border-2 rounded-lg border-slate-600 m-4 cursor-pointer drop-shadow-3xl max-w-[470]  hover:scale-105 hover:transition-transform" onClick={() => window.open(obj.url)} style={{ maxWidth: 450 }}>
       <BlogTitle id={obj.id} />
       <BlogBody obj={obj} />
     </div >
@@ -17,7 +17,7 @@ function BlogCard({ obj }: { obj: IDev }) {
 
 
 function BlogTitle({ id }: { id: number }) {
-  return (<Image src={`https://dev.to/social_previews/article/${id}.png`} width={474} height={232} layout='responsive' objectFit="fill" className="rounded-t-lg drop-shadow-2xl" />);
+  return (<Image src={`https://dev.to/social_previews/article/${id}.png`} width={474} height={232} layout='responsive' objectFit="fill" className="rounded-t-lg drop-shadow-3xl" />);
 }
 
 function BlogBody({ obj }: { obj: IDev }) {

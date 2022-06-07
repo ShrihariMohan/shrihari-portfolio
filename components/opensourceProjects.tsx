@@ -66,8 +66,8 @@ const OpenSourceProjects = React.forwardRef<HTMLDivElement>((props, ref) => {
           </p>
         </div>
           <Box className="flex gap-4 mt-6" sx={{ justifyContent: { xs: 'center', sm: 'start' } }}>
-          <OutlinedButton text="View Github" icon={<GitHubIcon className="align-top" />} onClick={onViewGitOfSqueeth} />
           <PrimaryButton text="Visit Website" icon={<LanguageIcon className="align-top" />} onClick={() => window.open('https://www.squeethportal.xyz/')} />
+            <OutlinedButton text="View Github" icon={<GitHubIcon className="align-top" />} onClick={onViewGitOfSqueeth} />
           </Box>
       </Grid>
         <Grid item xs={12} sm={8} md={5} mb={4} className=" px-4">
@@ -107,8 +107,8 @@ const OpenSourceProjects = React.forwardRef<HTMLDivElement>((props, ref) => {
           </p>
         </div>
           <Box className="flex gap-4 mt-6" sx={{ justifyContent: { xs: 'center', sm: 'start' } }}>
-          <OutlinedButton text="View Github" icon={<GitHubIcon className="align-top" />} onClick={onViewGitOfPvz} />
           <PrimaryButton text="Visit Website" icon={<LanguageIcon className="align-top" />} onClick={() => window.open('https://pvz-2-api.vercel.app/')} />
+            <OutlinedButton text="View Github" icon={<GitHubIcon className="align-top" />} onClick={onViewGitOfPvz} />
           </Box>
       </Grid>
 
