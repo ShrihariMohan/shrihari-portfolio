@@ -21,7 +21,7 @@ export const githubLinks = {
 export const moreLinks = {
   devto: "https://dev.to/shrihari/colors-design-inspiration-websites-for-new-comers-1lcb",
   book: "https://www.refactoringui.com/book",
-  company: 'https://www.varivas.in/',
+  company: 'https://www.linkedin.com/company/denovo-systems/',
   music: 'https://music.youtube.com/playlist?list=PLZFuu_CjnMTXMZPlXB10YbupUl8lhZBsc&feature=share',
   form: 'https://forms.gle/9YXHDV2oQu7bZ3u7A'
 }

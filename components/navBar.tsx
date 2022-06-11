@@ -12,7 +12,7 @@ function NavBar({ onSeeAbout, showNavItems = true, showBlogsItems = true, showAb
           showNavItems && <div>
             {
               showBlogsItems &&
-              <Link href='/blogs' >
+              <Link href='/blogs/top' >
               <span className="cursor-pointer tracking-widest font-bold mr-4" style={{ fontFamily: 'Satisfy, cursive' }}> Blogs </span>
             </Link>
             }

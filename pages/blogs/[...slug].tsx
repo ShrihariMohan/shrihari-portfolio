@@ -32,8 +32,6 @@ const Blogs: NextPage<props> = ({ data }: props) => {
   const query = router.query;
   const slug = query.slug as Array<string>;
 
-  console.log("🚀 ~ file: [...slug].tsx ~ line 33 ~ slug", slug)
-
   const blogsRef: any = useRef<HTMLElement>(null)
   const aboutRef: any = useRef<HTMLElement>(null)
 
@@ -45,9 +43,9 @@ const Blogs: NextPage<props> = ({ data }: props) => {
     blogsRef?.current.scrollIntoView({ behavior: 'smooth', block })
   }
 
-  if (slug.length) {
-    // window.scroll(0, 100)
-  }
+  // if (slug.length) {
+  //   // window.scroll(0, 100)
+  // }
 
   const onScrollToABout = () => {
     let block = 'start'

@@ -6,7 +6,7 @@ export function FirstCol({ }) {
 
     <p className=" text-slate-400 mb-2"> Currently working in <a href={moreLinks.company} target='_blank'>
       <span className="font-bold text-slate-300">
-      Varivas
+        Denovo Systems
     </span>
     </a>
     </p>
