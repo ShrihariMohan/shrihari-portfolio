@@ -108,10 +108,15 @@ const Blogs: NextPage<props> = ({ data }: props) => {
         <meta property="twitter:title" content="Shrihari Blogs" />
         <meta property="twitter:description" content="I write stuff on DevTo and Medium" />
         <meta property="twitter:image" content="https://i.ibb.co/0yRWw6g/blog-page-og-image.png" />
+
+        <link rel='icon' href="https://img.icons8.com/color/48/000000/morty-smith.png" type='image/x-icon'></link>
+
       </Head>
       <NavBar showBlogsItems={false} onSeeAbout={onScrollToABout} />
       <BlogLanding onViewBlogs={onScrollToBlogs} />
-      <FormControl sx={{ m: 1, minWidth: 120, maxWidth: 250 }} fullWidth className="flex justify-center mx-auto">
+      <div className="flex justify-center ">
+
+        <FormControl sx={{ m: 1, minWidth: 120, maxWidth: 250 }} fullWidth >
         <InputLabel id="demo-select-small">Sort By</InputLabel>
         <Select
           labelId="sort-blogs"
@@ -120,7 +125,7 @@ const Blogs: NextPage<props> = ({ data }: props) => {
           label="Sort By"
           onChange={handleFilter}
           className="rounded-lg"
-        >
+          >
           {
             sortOptsArray.map((sortOption, index) => {
               return <MenuItem key={index} value={sortOption}>{sortOption}</MenuItem>
@@ -128,6 +133,7 @@ const Blogs: NextPage<props> = ({ data }: props) => {
           }
         </Select>
       </FormControl>
+      </div>
       <Grid container ref={blogsRef} className='sm:justify-center' pb={8}>
         {
           data.map((blog: any) => {
