@@ -2,17 +2,16 @@ import { Grid } from "@mui/material";
 import { NextPage } from "next";
 import Head from "next/head";
 import { useRef, useState } from "react";
-import BlogCard from "../../components/blogCard";
-import BlogLanding from "../../components/blogLanding";
-import BlogsContainer from "../../components/blogsContainer";
-import Footer from "../../components/footer";
-import NavBar from "../../components/navBar";
+import BlogCard from "../components/blogCard";
+import BlogLanding from "../components/blogLanding";
+import Footer from "../components/footer";
+import NavBar from "../components/navBar";
 
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
-import { IDev } from '../../types/devToTypes';
+import { IDev } from '../types/devToTypes';
 import { useRouter } from "next/router";
 
 interface props {
@@ -43,9 +42,6 @@ const Blogs: NextPage<props> = ({ data }: props) => {
     blogsRef?.current.scrollIntoView({ behavior: 'smooth', block })
   }
 
-  // if (slug.length) {
-  //   // window.scroll(0, 100)
-  // }
 
   const onScrollToABout = () => {
     let block = 'start'
@@ -113,33 +109,33 @@ const Blogs: NextPage<props> = ({ data }: props) => {
 
       </Head>
       <NavBar showBlogsItems={false} onSeeAbout={onScrollToABout} />
-      <BlogLanding onViewBlogs={onScrollToBlogs} />
+      {/* <BlogLanding onViewBlogs={onScrollToBlogs} /> */}
       <div className="flex justify-center ">
 
         <FormControl sx={{ m: 1, minWidth: 120, maxWidth: 250 }} fullWidth >
-        <InputLabel id="demo-select-small">Sort By</InputLabel>
-        <Select
-          labelId="sort-blogs"
-          id="sort-blogs"
-          value={sort}
-          label="Sort By"
-          onChange={handleFilter}
-          className="rounded-lg"
+          <InputLabel id="demo-select-small">Sort By</InputLabel>
+          <Select
+            labelId="sort-blogs"
+            id="sort-blogs"
+            value={sort}
+            label="Sort By"
+            onChange={handleFilter}
+            className="rounded-lg"
           >
-          {
-            sortOptsArray.map((sortOption, index) => {
-              return <MenuItem key={index} value={sortOption}>{sortOption}</MenuItem>
-            })
-          }
-        </Select>
-      </FormControl>
+            {
+              sortOptsArray.map((sortOption, index) => {
+                return <MenuItem key={index} value={sortOption}>{sortOption}</MenuItem>
+              })
+            }
+          </Select>
+        </FormControl>
       </div>
       <Grid container ref={blogsRef} className='sm:justify-center' pb={8}>
         {
-          data.map((blog: any) => {
+          data.map((blog: any, index) => {
             return (
-              <Grid item sx={{ marginRight: { xs: 0 } }}>
-                <BlogCard obj={blog} key={blog.id} />
+              <Grid item key={index} sx={{ marginRight: { xs: 0 } }}>
+                <BlogCard obj={blog} key={index} />
               </Grid>
             )
           })
@@ -162,7 +158,6 @@ export async function getServerSideProps() {
   }
   )
   const data = await res.json()
-
   // Pass data to the page via props
   return { props: { data } }
 }

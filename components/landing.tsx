@@ -9,6 +9,7 @@ import { motion } from "framer-motion"
 import OutlinedButton from "./Buttons/outlinedButton";
 import BookOutlinedIcon from '@mui/icons-material/BookOutlined';
 import { useRouter } from 'next/router';
+import { links } from "../constants/contactLinks";
 
 
 function Landing({ onSeeProjects }: { onSeeProjects: Function }) {
@@ -20,13 +21,18 @@ function Landing({ onSeeProjects }: { onSeeProjects: Function }) {
       <Grid item xs={0} sm={2} />
         <Grid item xs={12} sm={8} md={4} >
         <Box sx={{ textAlign: { xs: 'center', sm: 'left' } }} >
-            <AboveTitle text="Full Stack web developer" />
-            <h1 className="text-3xl font-semibold mt-2 tracking-wide mb-4">
+            <AboveTitle text="Web developer" />
+            <h1 className="text-3xl font-semibold mt-2 tracking-wide mb-2">
               I Stack your Problems and pop 🎉 until its Empty
             </h1>
+
+            <section className="flex justify-center sm:justify-start mb-4">
+              <p className="mr-3 text-slate-400">Follow <a href={links.devto} target='_blank' className="text-cyan-500">@Devto</a></p>
+              <p className="text-slate-400">Follow <a href={links.medium} target='_blank' className="text-cyan-500">@Medium </a></p>
+            </section>
             <div className="flex gap-4 justify-center sm:justify-start">
               <PrimaryButton text="See Contributions" icon={<RemoveRedEyeOutlinedIcon className="align-top" />} onClick={() => onSeeProjects()} />
-              <OutlinedButton text="View Blogs" icon={<BookOutlinedIcon className="align-top" />} onClick={() => { router.push('/blogs/view') }} />
+              <OutlinedButton text="View Blogs" icon={<BookOutlinedIcon className="align-top" />} onClick={() => { router.push('/blogs') }} />
             </div>
         </Box>
       </Grid>

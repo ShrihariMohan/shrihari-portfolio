@@ -3,17 +3,11 @@ import { FirstCol } from './Footer/firstCol';
 import { Box, Grid } from "@mui/material"
 import React from "react"
 
-import Email from "./Social/emailIcon";
-import LinkedIn from "./Social/linkedIn";
-import Twitter from "./Social/twitter";
-import Github from "./Social/github";
-
-import Reddit from "./Social/reddit";
-import Facebook from './Social/facebook';
+import { Github, DevTo, MediumIcon, Twitter, Reddit, Facebook, LinkedIn, Email } from './Social/social';
 
 const Footer = React.forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <footer className="bg-gray-900 w-full pt-6  px-3" >
+    <footer className="bg-gray-900 w-full pt-6 px-3 bg-auto" >
       <h1 className='text-2xl text-center mb-8 tracking-widest' style={{ fontFamily: 'Satisfy, cursive' }}> About & Other Stuff</h1>
       <Grid container sx={{ flexDirection: 'column' }} ref={ref}>
         <Grid container mb={2} justifyContent='center' spacing={2}>
@@ -23,6 +17,8 @@ const Footer = React.forwardRef<HTMLDivElement>((props, ref) => {
 
         <Box className="flex justify-center gap-4 text-center w-full mt-2" sx={{ mb: { xs: 4, sm: 0 } }}>
           <Github />
+          <DevTo />
+          <MediumIcon />
           <Twitter />
           <Reddit />
           <Facebook />
