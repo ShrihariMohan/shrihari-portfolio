@@ -8,7 +8,7 @@ import { IDev } from "../types/devToTypes";
 
 function BlogCard({ obj }: { obj: IDev }) {
   return (
-    <div className="border-2 rounded-lg border-slate-700 m-4 cursor-pointer drop-shadow-3xl max-w-[470]  hover:scale-105 hover:transition-transform" onClick={() => window.open(obj.url)} style={{ maxWidth: 450 }}>
+    <div className="border-2 rounded-lg border-slate-700 m-4 cursor-pointer drop-shadow-3xl" onClick={() => window.open(obj.url)} style={{ minWidth: 320, maxWidth: 474 }}>
       <BlogTitle id={obj.id} />
       <BlogBody obj={obj} />
     </div >
@@ -19,7 +19,8 @@ function BlogCard({ obj }: { obj: IDev }) {
 function BlogTitle({ id }: { id: number }) {
   return (<Image
     src={`https://dev.to/social_previews/article/${id}.png`}
-    width={474} height={232} layout='responsive'
+    width={474} height={232}
+    layout='responsive'
     objectFit="fill"
     className="rounded-t-lg drop-shadow-3xl"
     priority />);
@@ -27,15 +28,14 @@ function BlogTitle({ id }: { id: number }) {
 
 function BlogBody({ obj }: { obj: IDev }) {
   return (<div className="p-3">
-    <p className="text-slate-300 text-lg mb-4">
+    <p className="text-slate-300 text-lg mb-2">
           {obj.description}
     </p>
-    <div className="mb-6">
-
+    <div className="mb-6 flex flex-wrap">
       {
         obj.tag_list?.map((each, ind) => {
           return (
-            <span className="text-slate-400 border-2 border-slate-500 rounded-lg px-2 py-1 mr-2" key={ind}>{each}</span>
+            <span className="text-slate-400 border-2 border-slate-500 rounded-lg px-2 py-1 mr-2 mt-2" key={ind}>{each}</span>
           )
         })
       }

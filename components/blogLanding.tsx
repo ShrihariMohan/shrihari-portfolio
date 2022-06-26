@@ -15,7 +15,7 @@ function BlogLanding({ onViewBlogs }: { onViewBlogs?: Function }) {
       <Grid container className="px-4 sm:px-0 flex justify-center items-center" sx={{ height: 'calc(100vh - 64px)' }}>
         <Grid item xs={0} sm={2} />
         <Grid item xs={12} sm={4} >
-          <Box sx={{ textAlign: { xs: 'center', sm: 'left' } }} >
+          <Box sx={{ textAlign: { xs: 'center', sm: 'center', md: 'left' } }} >
             <AboveTitle text="Content Writer" />
             <h1 className="text-3xl font-semibold mt-2 tracking-wide mb-4 ">
               I write stuff on DevTo and Medium

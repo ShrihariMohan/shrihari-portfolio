@@ -11,11 +11,12 @@ const darkTheme = createTheme({
 });
 
 function MyApp({ Component, pageProps }: AppProps) {
+
   return (
     <>
       <ThemeProvider theme={darkTheme}>
-      <NextNProgress color='#0891b2' />
-      <Component {...pageProps} />
+        <NextNProgress color='#0891b2' options={{ showSpinner: false, easing: "ease" }} />
+        <Component {...pageProps} />
       </ThemeProvider>
     </>
   )
