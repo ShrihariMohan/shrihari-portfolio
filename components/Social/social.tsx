@@ -13,7 +13,7 @@ import LogoDevIcon from '@mui/icons-material/LogoDev';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import RedditIcon from '@mui/icons-material/Reddit';
 
-
+import LocalDrinkIcon from '@mui/icons-material/LocalDrink';
 
 function Twitter({ }) {
   return (
@@ -103,9 +103,19 @@ function Email({ }) {
 
 function DevTo({ }) {
   return (
-    <Tooltip title="Devto" arrow placement="top">
+    <Tooltip title="Devto community" arrow placement="top">
       <a href={links.devto} target='_blank' className='hover:cursor-pointer'>
         <LogoDevIcon className='text-slate-300 hover:text-slate-200' />
+      </a>
+    </Tooltip>
+  );
+}
+
+function Buttermilk({ }) {
+  return (
+    <Tooltip title="Buy me a buttermilk" arrow placement="top">
+      <a href={links.buttermilk} target='_blank' className='hover:cursor-pointer'>
+        <LocalDrinkIcon className='text-yellow-200 hover:text-yellow-300' />
       </a>
     </Tooltip>
   );
@@ -120,5 +130,6 @@ export {
   Github,
   Facebook,
   LinkedIn,
-  Twitter
+  Twitter,
+  Buttermilk
 }

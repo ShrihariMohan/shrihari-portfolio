@@ -7,7 +7,8 @@ export const links = {
   reddit: 'https://www.reddit.com/user/WabbaLubbaDubDbb',
   facebook: 'https://www.facebook.com/shriharipapa/',
   devto: 'https://dev.to/shrihari',
-  medium: 'https://medium.com/@shriharimohan'
+  medium: 'https://medium.com/@shriharimohan',
+  buttermilk: 'https://www.buymeacoffee.com/shriharimohan'
 }
 
 export const githubLinks = {

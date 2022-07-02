@@ -3,7 +3,8 @@ import { FirstCol } from './Footer/firstCol';
 import { Box, Grid } from "@mui/material"
 import React from "react"
 
-import { Github, DevTo, MediumIcon, Twitter, Reddit, Facebook, LinkedIn, Email } from './Social/social';
+import { Github, DevTo, MediumIcon, Twitter, Reddit, Facebook, LinkedIn, Email, Buttermilk } from './Social/social';
+import { links } from '../constants/contactLinks';
 
 const Footer = React.forwardRef<HTMLDivElement>((props, ref) => {
   return (
@@ -24,6 +25,7 @@ const Footer = React.forwardRef<HTMLDivElement>((props, ref) => {
           <Facebook />
           <LinkedIn />
           <Email />
+          <Buttermilk />
         </Box>
         <p className='text-center text-slate-600 mt-6'> Feel Free to use this as a <a href='https://github.com/ShrihariMohan/shrihari-portfolio' className='cursor-pointer underline font-bold text-cyan-600 hover:scale-110' target='_blank'> template</a> for your portfolio</p>
         <p className='text-center text-slate-600 mb-2'> Made with love 🧡 and Nextjs</p>
