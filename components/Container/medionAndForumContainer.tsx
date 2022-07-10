@@ -1,6 +1,6 @@
 import { Grid } from "@mui/material"
-import Medion from "./medion";
-import Forum from "./forum";
+import Medion from "../Project_Details/medion";
+import Forum from "../Project_Details/forum";
 
 
 function MedionAndForumContainer() {

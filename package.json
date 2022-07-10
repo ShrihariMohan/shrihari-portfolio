@@ -20,6 +20,7 @@
     "locomotive-scroll": "^4.1.4",
     "next": "12.1.0",
     "next-nprogress": "^1.4.0",
+    "next-themes": "^0.2.0",
     "nextjs-progressbar": "^0.0.14",
     "nprogress": "^0.2.0",
     "postcss": "^8.4.12",

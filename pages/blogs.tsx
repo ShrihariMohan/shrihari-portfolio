@@ -2,10 +2,10 @@ import { Grid } from "@mui/material";
 import { NextPage } from "next";
 import Head from "next/head";
 import { useRef, useState } from "react";
-import BlogCard from "../components/blogCard";
+import BlogCard from "../components/UI components/blogCard";
 import BlogLanding from "../components/blogLanding";
-import Footer from "../components/footer";
-import NavBar from "../components/navBar";
+import Footer from "../components/Footer/footer";
+import NavBar from "../components/Navbar/navBar";
 
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
@@ -34,7 +34,7 @@ const Blogs: NextPage<props> = ({ data }: props) => {
   const blogsRef: any = useRef<HTMLElement>(null)
   const aboutRef: any = useRef<HTMLElement>(null)
 
-  const [sort, setSort] = useState(sortOptsArray[0]);
+  const [sort, setSort] = useState<sortOptions>(sortOptions.MostViewed);
 
   const onScrollToBlogs = () => {
     let block = 'start'
@@ -51,7 +51,7 @@ const Blogs: NextPage<props> = ({ data }: props) => {
 
 
   const handleFilter = (event: SelectChangeEvent) => {
-    const sortOption = event.target.value;
+    const sortOption = event.target.value as sortOptions;
     setSort(sortOption);
 
     switch (sortOption) {
@@ -120,7 +120,7 @@ const Blogs: NextPage<props> = ({ data }: props) => {
             value={sort}
             label="Sort By"
             onChange={handleFilter}
-            className="rounded-lg"
+            className="rounded-lg drop-shadow-lg  active:border-cyan-400"
           >
             {
               sortOptsArray.map((sortOption, index) => {
@@ -132,7 +132,7 @@ const Blogs: NextPage<props> = ({ data }: props) => {
       </div>
       <Grid container ref={blogsRef} className='sm:justify-center' pb={8}>
         {
-          data.map((blog: any, index) => {
+          data.slice(0, 4).map((blog: any, index) => {
             return (
               <Grid item key={index} sx={{ marginRight: { xs: 0 } }}>
                 <BlogCard obj={blog} key={index} />
@@ -157,7 +157,9 @@ export async function getServerSideProps() {
     },
   }
   )
-  const data = await res.json()
+  let data: IDev[] = await res.json()
+  data = data.sort((a, b) => a.page_views_count - b.page_views_count > 0 ? -1 : 1)
+
   // Pass data to the page via props
   return { props: { data } }
 }

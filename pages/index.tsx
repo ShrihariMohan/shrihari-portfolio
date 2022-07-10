@@ -1,14 +1,14 @@
-import { Mentions } from './../components/Mentions';
+import { Mentions } from '../components/Project_Details/Mentions';
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Landing from '../components/landing'
-import NavBar from '../components/navBar'
-import Projects from '../components/projectsContainer'
+import NavBar from '../components/Navbar/navBar'
+import Projects from '../out/projectsContainer'
 import { createRef, useEffect, useRef, useState } from 'react'
-import SplashScreen from '../components/splashScreen'
-import OpenSourceProjects from '../components/opensourceProjects'
-import Footer from '../components/footer'
+import SplashScreen from '../components/UI components/splashScreen'
+import OpenSourceProjects from '../components/Project_Details/opensourceProjects'
+import Footer from '../components/Footer/footer'
 
 
 const Home: NextPage = () => {
@@ -82,11 +82,6 @@ const Home: NextPage = () => {
 
             <section >
               <Projects />
-            </section>
-
-            <section>
-
-              <Mentions />
             </section>
 
             <section>

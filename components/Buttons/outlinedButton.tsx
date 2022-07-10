@@ -11,7 +11,7 @@ function OutlinedButton({ text, onClick, icon }: OutlinedButtonProps) {
     <motion.button
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
-      className="border border-cyan-300 p-3 text-cyan-300 rounded-lg hover:bg-cyan-900 cursor-pointer"
+      className="border border-cyan-300 p-3 text-cyan-300 rounded-lg hover:bg-cyan-900 cursor-pointer drop-shadow-lg"
       onClick={onClick}
     >
       {icon ? icon : ''}  {text}

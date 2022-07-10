@@ -1,10 +1,10 @@
 import { Box, Grid } from "@mui/material"
-import Chips from "./chips"
+import Chips from "../UI components/chips"
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { githubLinks, links } from "../constants/contactLinks"
-import { VideoDemoLinks } from "../constants/videoDemoLinks";
-import AboveTitle from "./Typograpy/aboveTitle";
-import PrimaryButton from "./Buttons/primaryButton";
+import { githubLinks, links } from "../../constants/contactLinks"
+import { VideoDemoLinks } from "../../constants/videoDemoLinks";
+import AboveTitle from "../Typograpy/aboveTitle";
+import PrimaryButton from "../Buttons/primaryButton";
 const stack = ['React', 'DraftJS', 'Material UI', 'MongoDB', 'NodeJS', 'Express']
 
 function Medion() {

@@ -2,7 +2,7 @@ import Image from "next/image"
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import ModeCommentOutlinedIcon from '@mui/icons-material/ModeCommentOutlined';
-import { IDev } from "../types/devToTypes";
+import { IDev } from "../../types/devToTypes";
 
 
 
@@ -29,7 +29,7 @@ function BlogTitle({ id }: { id: number }) {
 function BlogBody({ obj }: { obj: IDev }) {
   return (<div className="p-3">
     <p className="text-slate-300 text-lg mb-2">
-          {obj.description}
+      {obj.description}
     </p>
     <div className="mb-6 flex flex-wrap">
       {
@@ -40,20 +40,20 @@ function BlogBody({ obj }: { obj: IDev }) {
         })
       }
     </div>
-        <div className="flex justify-between">
-          <div>
-            <span className="mr-4 font-bold">
+    <div className="flex justify-between">
+      <div>
+        <span className="mr-4 font-bold">
           <FavoriteBorderIcon className="text-pink-600" /> {obj.public_reactions_count}
-            </span>
-            <span className="mr-4 font-bold">
+        </span>
+        <span className="mr-4 font-bold">
           <VisibilityOutlinedIcon className="text-green-600" /> {obj.page_views_count}
-            </span>
-            <span className="mr-4 font-bold">
+        </span>
+        <span className="mr-4 font-bold">
           <ModeCommentOutlinedIcon className="text-yellow-600" /> {obj.comments_count}
-            </span>
-          </div>
-          <p className="text-slate-400"> {obj.reading_time_minutes} min read</p>
-        </div>
+        </span>
+      </div>
+      <p className="text-slate-400"> {obj.reading_time_minutes} min read</p>
+    </div>
 
   </div>);
 }

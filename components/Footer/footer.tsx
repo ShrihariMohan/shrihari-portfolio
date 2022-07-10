@@ -1,10 +1,10 @@
-import { SecondCol } from './Footer/secondCol';
-import { FirstCol } from './Footer/firstCol';
+import { SecondCol } from './secondCol';
+import { FirstCol } from './firstCol';
 import { Box, Grid } from "@mui/material"
 import React from "react"
 
-import { Github, DevTo, MediumIcon, Twitter, Reddit, Facebook, LinkedIn, Email, Buttermilk } from './Social/social';
-import { links } from '../constants/contactLinks';
+import { Github, DevTo, MediumIcon, Twitter, Reddit, Facebook, LinkedIn, Email, Buttermilk } from '../Social/social';
+import { links } from '../../constants/contactLinks';
 
 const Footer = React.forwardRef<HTMLDivElement>((props, ref) => {
   return (

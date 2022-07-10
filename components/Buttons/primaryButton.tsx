@@ -11,7 +11,7 @@ function PrimaryButton({ text, onClick, icon }: PrimaryButtonProps) {
     <motion.button
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
-      className="bg-cyan-300 p-3  text-black rounded-lg hover:bg-cyan-500 cursor-pointer"
+      className="bg-cyan-300 p-3  text-black rounded-lg hover:bg-cyan-500 cursor-pointer drop-shadow-lg"
       onClick={onClick}
     >
       {icon ? icon : ''}  {text}
