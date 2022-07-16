@@ -1,14 +1,13 @@
-import { Mentions } from '../components/Project_Details/Mentions';
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import Landing from '../components/landing'
+import Landing from '../components/Landing/landing'
 import NavBar from '../components/Navbar/navBar'
 import Projects from '../out/projectsContainer'
-import { createRef, useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import SplashScreen from '../components/UI components/splashScreen'
 import OpenSourceProjects from '../components/Project_Details/opensourceProjects'
 import Footer from '../components/Footer/footer'
+import AddToMailList from '../components/Container/addToMailList';
 
 
 const Home: NextPage = () => {
@@ -53,14 +52,14 @@ const Home: NextPage = () => {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Shrihari M" />
         <meta property="og:description" content="Wabba Lubba Dubb Dub" />
-        <meta property="og:image" content="https://i.ibb.co/tzRTstD/shrihari-portfolio-og-image.png" />
+        <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/shrihari-personal-storage.appspot.com/o/shrihari-portfolio-og-image.png?alt=media&token=6ca79577-e6c5-4eba-8cf8-07f6945911d9" />
         <meta property="og:url" content="https://shrihari-portfolio.vercel.app/" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://shrihari-portfolio.vercel.app/" />
         <meta property="twitter:title" content="Shrihari M" />
         <meta property="twitter:description" content="Wabba Lubba Dubb Dub" />
-        <meta property="twitter:image" content="https://i.ibb.co/tzRTstD/shrihari-portfolio-og-image.png" />
+        <meta property="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/shrihari-personal-storage.appspot.com/o/shrihari-portfolio-og-image.png?alt=media&token=6ca79577-e6c5-4eba-8cf8-07f6945911d9" />
 
         <link rel='icon' href="https://img.icons8.com/color/48/000000/morty-smith.png" type='image/x-icon'></link>
       </Head>
@@ -80,6 +79,10 @@ const Home: NextPage = () => {
               <OpenSourceProjects ref={projectsRef} />
             </section>
 
+            <section>
+              <AddToMailList />
+            </section>  
+
             <section >
               <Projects />
             </section>
@@ -87,6 +90,8 @@ const Home: NextPage = () => {
             <section>
               <Footer ref={aboutRef} />
             </section>
+
+
           </>
         }
       </main>

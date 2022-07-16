@@ -21,7 +21,7 @@ export function FirstCol({ }) {
 
 
 
-    <p className="text-slate-400 mb-2"> Favourite music
+    <p className="text-slate-400 mb-2"> Favourite youtube music 
       <a href={moreLinks.music} target='_blank'>  &nbsp;
         <span className="font-bold text-slate-300">
           Playlist

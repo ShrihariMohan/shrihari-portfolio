@@ -3,7 +3,6 @@ import { NextPage } from "next";
 import Head from "next/head";
 import { useRef, useState } from "react";
 import BlogCard from "../components/UI components/blogCard";
-import BlogLanding from "../components/blogLanding";
 import Footer from "../components/Footer/footer";
 import NavBar from "../components/Navbar/navBar";
 
@@ -13,6 +12,7 @@ import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import { IDev } from '../types/devToTypes';
 import { useRouter } from "next/router";
+import AddToMailList from "../components/Container/addToMailList";
 
 interface props {
   data: IDev[] | []
@@ -96,21 +96,24 @@ const Blogs: NextPage<props> = ({ data }: props) => {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Shrihari Blogs" />
         <meta property="og:description" content="I write stuff on DevTo and Medium" />
-        <meta property="og:image" content="https://i.ibb.co/0yRWw6g/blog-page-og-image.png" />
+        <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/shrihari-personal-storage.appspot.com/o/blog-og-image.png?alt=media&token=07054d5b-f14a-4c94-a597-7d2560730f33" />
         <meta property="og:url" content="https://shrihari-portfolio.vercel.app/blogs" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://shrihari-portfolio.vercel.app/blogs" />
         <meta property="twitter:title" content="Shrihari Blogs" />
         <meta property="twitter:description" content="I write stuff on DevTo and Medium" />
-        <meta property="twitter:image" content="https://i.ibb.co/0yRWw6g/blog-page-og-image.png" />
+        <meta property="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/shrihari-personal-storage.appspot.com/o/blog-og-image.png?alt=media&token=07054d5b-f14a-4c94-a597-7d2560730f33" />
 
         <link rel='icon' href="https://img.icons8.com/color/48/000000/morty-smith.png" type='image/x-icon'></link>
 
       </Head>
       <NavBar showBlogsItems={false} onSeeAbout={onScrollToABout} />
       {/* <BlogLanding onViewBlogs={onScrollToBlogs} /> */}
-      <div className="flex justify-center ">
+      <section >
+        <AddToMailList />
+      </section>
+      <div className="flex justify-center mt-12">
 
         <FormControl sx={{ m: 1, minWidth: 120, maxWidth: 250 }} fullWidth >
           <InputLabel id="demo-select-small">Sort By</InputLabel>

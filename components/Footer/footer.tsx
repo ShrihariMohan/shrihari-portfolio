@@ -8,7 +8,7 @@ import { links } from '../../constants/contactLinks';
 
 const Footer = React.forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <footer className="bg-gray-900 w-full pt-6 px-3 bg-auto" >
+    <footer className="bg-gray-900 w-full p-6 pt-12 bg-auto" >
       <h1 className='text-2xl text-center mb-8 tracking-widest' style={{ fontFamily: 'Satisfy, cursive' }}> About & Other Stuff</h1>
       <Grid container sx={{ flexDirection: 'column' }} ref={ref}>
         <Grid container mb={2} justifyContent='center' spacing={2}>

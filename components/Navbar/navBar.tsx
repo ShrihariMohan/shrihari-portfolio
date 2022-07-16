@@ -1,13 +1,16 @@
 import React from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
-import { Tooltip } from '@mui/material';
-import { links } from '../../constants/contactLinks';
-import { Buttermilk } from '../Social/social';
-import ThemeSwitcher from '../UI components/themeSwitcher';
-function NavBar({ onSeeAbout, showNavItems = true, showBlogsItems = true, showAboutItems = true }: { onSeeAbout?: any, showNavItems?: boolean, showBlogsItems?: boolean, showAboutItems?: boolean }) {
+
+type props = {
+  onSeeAbout?: any,
+  showNavItems?: boolean,
+  showBlogsItems?: boolean,
+  showAboutItems?: boolean,
+}
+function NavBar({ onSeeAbout, showNavItems = true, showBlogsItems = true, showAboutItems = true }: props) {
   return (
-    <nav className='py-4 md:px-12 px-6 text-lg sticky top-0 h-[60px] backdrop-blur-md	z-10' >
+    <nav className={'py-4 md:px-12 px-6 text-lg sticky top-0 h-[60px] backdrop-blur-md	z-10 '} >
       <ul className='flex justify-between items-center'>
         <Link href='/'>
           <li className='flex items-center tracking-widest text-cyan-500 font-extrabold cursor-pointer'>
@@ -29,10 +32,8 @@ function NavBar({ onSeeAbout, showNavItems = true, showBlogsItems = true, showAb
                 About
               </button>
             }
-            <Buttermilk />
           </div>
         }
-
       </ul>
     </nav>
   )

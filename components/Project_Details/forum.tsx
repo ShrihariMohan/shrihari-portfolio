@@ -16,10 +16,10 @@ function Forum() {
 
   return (
     <Box mb={3}>
-      <AboveTitle text="Project" />
+      <AboveTitle text="Silly Project" />
       <p className="text-3xl font-bold tracking-wider mb-3">Forum</p>
       <video src={VideoDemoLinks.forum}
-        width={500} height={500} controls className="block  mx-auto  sm:mx-0 rounded-md mb-1">
+        width={500} height={500} controls className="block  mx-auto  sm:mx-0 rounded-md mb-1  shadow-lg  hover:shadow-cyan-600/40">
       </video>
       <Box className="mb-4">
         {

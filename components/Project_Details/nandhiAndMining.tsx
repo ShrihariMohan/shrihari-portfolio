@@ -28,9 +28,9 @@ function NandhiAndMining() {
 
         </Grid>
 
-        <Grid item xs={12} sm={5} md={4} sx={{ textAlign: { xs: 'center', sm: 'unset' } }}>
+        <Grid item xs={12} sm={5} md={4} sx={{ textAlign: { xs: 'center', sm: 'unset' } }} className="rounded-md">
           <video src={VideoDemoLinks.nandhi}
-            width={500} controls className="rounded-md block mx-auto" >
+            width={500} controls className="rounded-md block mx-auto  shadow-lg  hover:shadow-cyan-600/40" >
           </video>
 
           <Box className="mt-2 mx-2 text-center">

@@ -29,9 +29,9 @@ const OpenSourceProjects = React.forwardRef<HTMLDivElement>((props, ref) => {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
     >
-      <Grid container justifyContent='center' alignItems='center' ref={ref} >
+      <Grid container justifyContent='center' alignItems='center' ref={ref} className="min-h-screen">
         <Grid item xs={0} sm={0} md={1} />
-        <Grid item xs={12} sm={8} md={5} mb={4} className="px-4">
+        <Grid item xs={12} sm={8} md={5} mb={4} className="p-4">
           <AboveTitle text='Open Source, Freelance' />
           <Title text="Squeeth Portal" />
           <div className=" drop-shadow-md  hover:scale-105 hover:transition-transform">
@@ -50,11 +50,11 @@ const OpenSourceProjects = React.forwardRef<HTMLDivElement>((props, ref) => {
 
                 <span>
                   <span className="text-slate-400"> Contributors</span> <PeopleIcon className="text-green-600 align-top" />
-                  <span className="font-bold"> 2 </span>
+                  <span className="font-bold"> 3 </span>
                 </span>
 
               </div>
-              <Tooltip title='Last Updated on 29 Mar 2022' className="ml-2" disableFocusListener enterTouchDelay={0}>
+              <Tooltip title='Last Updated on 15 Jul 2022' className="ml-2" disableFocusListener enterTouchDelay={0}>
                 <span>
                   <InfoOutlinedIcon className="align-top text-slate-500" />
                 </span>
@@ -70,12 +70,13 @@ const OpenSourceProjects = React.forwardRef<HTMLDivElement>((props, ref) => {
             <OutlinedButton text="View Github" icon={<GitHubIcon className="align-top" />} onClick={onViewGitOfSqueeth} />
           </Box>
         </Grid>
-        <Grid item xs={12} sm={8} md={5} mb={4} className=" px-4">
+        <Grid item xs={12} sm={8} md={5} mb={4} className=" p-4">
           <AboveTitle text='Open Source' />
           <Title text="PvZ 2 Api" />
 
           <div className=" drop-shadow-md  hover:scale-105 hover:transition-transform ">
             <a href="https://pvz-2-api.vercel.app/">
+
               <Image src='/pvz.jpeg' width={450} height={250} objectFit="cover" className="rounded-lg" />
             </a>
           </div>
@@ -86,7 +87,7 @@ const OpenSourceProjects = React.forwardRef<HTMLDivElement>((props, ref) => {
 
                 <span className="mr-6">
                   <span className="text-slate-400"> Github </span> <StarRoundedIcon className="text-yellow-600 align-top" />
-                  <span className="font-bold"> 41 </span>
+                  <span className="font-bold"> 4 </span>
                 </span>
 
                 <span>
@@ -95,7 +96,7 @@ const OpenSourceProjects = React.forwardRef<HTMLDivElement>((props, ref) => {
                 </span>
               </div>
 
-              <Tooltip title='Last Updated on 29 Mar 2022' className="ml-2" disableFocusListener enterTouchDelay={0}>
+              <Tooltip title='Last Updated on 15 Jul 2022' className="ml-2" disableFocusListener enterTouchDelay={0}>
                 <span>
                   <InfoOutlinedIcon className="align-top text-slate-500" />
                 </span>

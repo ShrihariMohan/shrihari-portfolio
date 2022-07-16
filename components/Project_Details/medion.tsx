@@ -15,10 +15,10 @@ function Medion() {
 
   return (
     <Box sx={{ mr: { xs: 0, sm: 2 } }} mb={3}>
-      <AboveTitle text="Project" />
+      <AboveTitle text="Silly Project" />
       <p className="text-3xl font-bold tracking-wider mb-3"> Medion  </p>
       <video src={VideoDemoLinks.medion}
-        width={500} height={500} controls className="text-center mx-auto block  sm:mx-0 sm:text-left rounded-md mb-1 ">
+        width={500} height={500} controls className="text-center mx-auto block  sm:mx-0 sm:text-left rounded-md mb-1  shadow-lg  hover:shadow-cyan-600/40 ">
       </video>
       <Box className="mb-4">
         {

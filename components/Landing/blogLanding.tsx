@@ -2,10 +2,10 @@ import Image from "next/image"
 
 import RemoveRedEyeOutlinedIcon from '@mui/icons-material/RemoveRedEyeOutlined';
 import { Box, Grid } from "@mui/material";
-import AboveTitle from "./Typograpy/aboveTitle";
-import PrimaryButton from "./Buttons/primaryButton";
+import AboveTitle from "../Typograpy/aboveTitle";
+import PrimaryButton from "../Buttons/primaryButton";
 import { motion } from "framer-motion"
-import { links } from "../constants/contactLinks";
+import { links } from "../../constants/contactLinks";
 
 function BlogLanding({ onViewBlogs }: { onViewBlogs?: Function }) {
 
