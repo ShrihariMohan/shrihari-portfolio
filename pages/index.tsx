@@ -2,12 +2,12 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Landing from '../components/Landing/landing'
 import NavBar from '../components/Navbar/navBar'
-import Projects from '../out/projectsContainer'
 import { useEffect, useRef, useState } from 'react'
 import SplashScreen from '../components/UI components/splashScreen'
 import OpenSourceProjects from '../components/Project_Details/opensourceProjects'
 import Footer from '../components/Footer/footer'
 import AddToMailList from '../components/Container/addToMailList';
+import MedionAndForumContainer from '../components/Container/medionAndForumContainer'
 
 
 const Home: NextPage = () => {
@@ -84,7 +84,7 @@ const Home: NextPage = () => {
             </section>  
 
             <section >
-              <Projects />
+              <MedionAndForumContainer />
             </section>
 
             <section>
