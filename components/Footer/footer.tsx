@@ -27,7 +27,7 @@ const Footer = React.forwardRef<HTMLDivElement>((props, ref) => {
           <Email />
           <Buttermilk />
         </Box>
-        <p className='text-center text-slate-600 mb-2'> Made with love 🧡 and Nextjs</p>
+        <p className='text-center text-slate-600 mt-2'> Made with love 🧡 and Nextjs</p>
       </Grid>
     </footer>
   )
