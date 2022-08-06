@@ -6,7 +6,7 @@ export const addSubscriber = async (email: string) => {
     const docRef = await addDoc(collection(db, "subscribers"), {
       email
     });
-    return { message: "Successfully subscribed to our newsletter" };
+    return { message: "Successfully subscribed to our newsletter!" };
 
   } catch (e: any) {
     return { message: e.message };
