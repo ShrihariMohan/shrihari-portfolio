@@ -8,6 +8,7 @@ import OpenSourceProjects from '../components/Project_Details/opensourceProjects
 import Footer from '../components/Footer/footer'
 import AddToMailList from '../components/Container/addToMailList';
 import MedionAndForumContainer from '../components/Container/medionAndForumContainer'
+import NandhiAndMining from '../components/Project_Details/nandhiAndMining'
 
 
 const Home: NextPage = () => {
@@ -83,6 +84,10 @@ const Home: NextPage = () => {
               <AddToMailList />
             </section>  
 
+            <section>
+              <NandhiAndMining/>
+            </section>
+
             <section >
               <MedionAndForumContainer />
             </section>
@@ -90,6 +95,8 @@ const Home: NextPage = () => {
             <section>
               <Footer ref={aboutRef} />
             </section>
+
+            
 
 
           </>

@@ -45,20 +45,16 @@ const OpenSourceProjects = React.forwardRef<HTMLDivElement>((props, ref) => {
 
                 <span className="mr-6">
                   <span className="text-slate-400"> Github </span> <StarRoundedIcon className="text-yellow-600 align-top" />
-                  <span className="font-bold"> 10 </span>
+                  <span className="font-bold"> 15 </span>
                 </span>
 
                 <span>
                   <span className="text-slate-400"> Contributors</span> <PeopleIcon className="text-green-600 align-top" />
-                  <span className="font-bold"> 3 </span>
+                  <span className="font-bold"> 8 </span>
                 </span>
 
               </div>
-              <Tooltip title='Last Updated on 15 Jul 2022' className="ml-2" disableFocusListener enterTouchDelay={0}>
-                <span>
-                  <InfoOutlinedIcon className="align-top text-slate-500" />
-                </span>
-              </Tooltip>
+              
             </div>
             <p className="mt-2 text-slate-300">
               An alternate app to interact with squeeth contracts and a single place for all your squeeths !
@@ -87,7 +83,7 @@ const OpenSourceProjects = React.forwardRef<HTMLDivElement>((props, ref) => {
 
                 <span className="mr-6">
                   <span className="text-slate-400"> Github </span> <StarRoundedIcon className="text-yellow-600 align-top" />
-                  <span className="font-bold"> 4 </span>
+                  <span className="font-bold"> 41 </span>
                 </span>
 
                 <span>
@@ -95,12 +91,6 @@ const OpenSourceProjects = React.forwardRef<HTMLDivElement>((props, ref) => {
                   <span className="font-bold"> 5 </span>
                 </span>
               </div>
-
-              <Tooltip title='Last Updated on 15 Jul 2022' className="ml-2" disableFocusListener enterTouchDelay={0}>
-                <span>
-                  <InfoOutlinedIcon className="align-top text-slate-500" />
-                </span>
-              </Tooltip>
             </div>
             <p className="mt-2 text-slate-300">
               An API built with with NextTS to help website builders build their websites about Plants-vs-Zombies-2

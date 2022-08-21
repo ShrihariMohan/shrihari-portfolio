@@ -72,8 +72,8 @@ function AddToMailList() {
             <Grid item xs={12} mt={2}>
               <p className="text-4xl leading-snug text-slate-200">
                 <span className="mr-2"> Get a </span>
-                <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-teal-700 relative inline-block">
-                  <span className="relative text-slate-200"> Free Copy </span>
+                <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-teal-500 relative inline-block">
+                  <span className="relative text-slate-900"> Free Copy </span>
                 </span>
                 <span className="ml-2"> to your inbox  </span>
               </p>
