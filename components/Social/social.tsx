@@ -121,6 +121,25 @@ function Buttermilk({ }) {
   );
 }
 
+function StackOverflow() {
+  return (
+    <Tooltip title="Stack Overflow" arrow placement="top">
+      <a
+        href={links.stackoverflow}
+        target="_blank"
+        className="flex items-center hover:cursor-pointer"
+      >
+        <Image
+          className=" align-middle"
+          src="/stack-overflow.png"
+          width={22}
+          height={22}
+        />
+      </a>
+    </Tooltip>
+  );
+}
+
 export {
   DevTo,
   Notion,
@@ -131,5 +150,6 @@ export {
   Facebook,
   LinkedIn,
   Twitter,
-  Buttermilk
-}
+  Buttermilk,
+  StackOverflow,
+};
