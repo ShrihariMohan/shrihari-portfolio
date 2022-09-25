@@ -56,7 +56,7 @@ const OpenSourceProjects = React.forwardRef<HTMLDivElement>((props, ref) => {
                 <span className="mr-6">
                   <span className="text-slate-400"> Github </span>{" "}
                   <StarRoundedIcon className="text-yellow-600 align-top" />
-                  <span className="font-bold"> 16 </span>
+                  <span className="font-bold"> 20 </span>
                 </span>
 
                 <span>
@@ -108,7 +108,7 @@ const OpenSourceProjects = React.forwardRef<HTMLDivElement>((props, ref) => {
                 <span className="mr-6">
                   <span className="text-slate-400"> Github </span>{" "}
                   <StarRoundedIcon className="text-yellow-600 align-top" />
-                  <span className="font-bold"> 41 </span>
+                  <span className="font-bold"> 42 </span>
                 </span>
 
                 <span>
