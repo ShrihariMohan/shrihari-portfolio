@@ -15,7 +15,6 @@ type OutlinedButtonProps = {
 }
 
 const OutlinedButton: FunctionComponent<OutlinedButtonProps> = ({ text, onClick, icon, fullWidth, variant = 'default' }) => {
-  console.log(variant)
   return (
     <motion.button
       whileHover={{ scale: 1.1 }}

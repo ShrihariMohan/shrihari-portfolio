@@ -13,6 +13,7 @@ function NandhiAndMining() {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
+      style={{ minHeight: '60vh' }}
     >
       <Grid
         container

@@ -70,8 +70,8 @@ function AddToMailList() {
             <Image
               className="hidden"
               src="/mail_subscriber.svg"
-              height={400}
-              width={400}
+              height={500}
+              width={500}
               alt="Subscribe for free articles"
             />
             <p className="text-slate-500 text-xs text-center">
@@ -131,7 +131,7 @@ function AddToMailList() {
               <p className="text-slate-400 mt-4">
                 I write content related to programming. I Have{" "}
                 <strong className="text-slate-200 ">370+</strong> followers on
-                dev and <strong className="text-slate-200 ">170+ </strong>on
+                dev and <strong className="text-slate-200 ">210+ </strong>on
                 medium.
               </p>
               <p className="text-slate-400 mt-2">
