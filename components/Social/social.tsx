@@ -47,15 +47,19 @@ function Notion() {
 }
 
 function MediumIcon({ }) {
+
+  const handleClick = () => {
+    window.open(links.medium, '_blank');
+  }
+
   return (
     <Tooltip title="Medium" arrow placement="top">
-      <a href={links.medium} target='_blank' className='flex items-center  hover:cursor-pointer'>
-        <Image
+      <img onClick={handleClick}
           className="rounded align-middle"
           src='/medium-icon.jpeg'
-          width={18}
-          height={18} />
-      </a>
+        width={24}
+        height={24}
+      />
     </Tooltip>
   );
 }
@@ -124,18 +128,12 @@ function Buttermilk({ }) {
 function StackOverflow() {
   return (
     <Tooltip title="Stack Overflow" arrow placement="top">
-      <a
-        href={links.stackoverflow}
-        target="_blank"
-        className="flex items-center hover:cursor-pointer"
-      >
-        <Image
+      <img
           className=" align-middle"
           src="/stack-overflow.png"
           width={22}
           height={22}
-        />
-      </a>
+      />
     </Tooltip>
   );
 }

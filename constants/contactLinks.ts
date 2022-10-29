@@ -25,5 +25,6 @@ export const moreLinks = {
   book: "https://www.refactoringui.com/book",
   company: 'https://www.linkedin.com/company/denovo-systems/',
   music: 'https://music.youtube.com/playlist?list=PLZFuu_CjnMTXMZPlXB10YbupUl8lhZBsc&feature=share',
-  form: 'https://forms.gle/9YXHDV2oQu7bZ3u7A'
+  form: 'https://forms.gle/9YXHDV2oQu7bZ3u7A',
+  carrd: 'https://shrihari.carrd.co/'
 }

@@ -20,20 +20,18 @@ export function FirstCol({ }) {
     </p> */}
 
 
-
-    <p className="text-slate-400 mb-2"> Favourite youtube music 
-      <a href={moreLinks.music} target='_blank'>  &nbsp;
-        <span className="font-bold text-slate-300">
-          Playlist
-        </span>
-      </a>
-    </p>
-
-
     <p className="text-slate-400 mb-2"> Recently finished book
       <a href={moreLinks.book} target='_blank'> &nbsp;
         <span className="font-bold text-slate-300">
           Refactoring UI
+        </span>
+      </a>
+    </p>
+
+    <p className="text-slate-400 mb-2"> Favourite youtube music
+      <a href={moreLinks.music} target='_blank'>  &nbsp;
+        <span className="font-bold text-slate-300">
+          Playlist
         </span>
       </a>
     </p>

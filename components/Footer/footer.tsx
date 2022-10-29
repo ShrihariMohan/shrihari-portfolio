@@ -14,6 +14,7 @@ import {
   Email,
   Buttermilk,
   StackOverflow,
+  Notion,
 } from "../Social/social";
 import { links } from "../../constants/contactLinks";
 
@@ -34,19 +35,20 @@ const Footer = React.forwardRef<HTMLDivElement>((props, ref) => {
         </Grid>
 
         <Box
-          className="flex justify-center gap-4 text-center w-full mt-2"
+          className="flex justify-center gap-4 text-center w-full mt-2 flex-wrap"
           sx={{ mb: { xs: 4, sm: 0 } }}
         >
           <Github />
+          <LinkedIn />
           <DevTo />
           <MediumIcon />
           <Twitter />
+          {/* <Notion /> */}
           <Reddit />
-          <Facebook />
-          <LinkedIn />
+          {/* <Facebook /> */}
           <StackOverflow />
-          <Email />
-          <Buttermilk />
+          {/* <Email /> */}
+          {/* <Buttermilk /> */}
         </Box>
         <p className="text-center text-slate-600 mt-2">
           {" "}

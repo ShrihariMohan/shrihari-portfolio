@@ -12,19 +12,20 @@ export function SecondCol({ }) {
     </a>
     </p>
 
-    <p className="text-slate-400 mb-2">Contact me by <a href={moreLinks.form} target='_blank'>
-      <span className="font-bold text-slate-300">
-      Form
-    </span>
-    </a>
-      <small> *coughs* Neanderthals </small> 
-    </p>
+
 
     <p className="text-slate-400 mb-2"> Need a professional resume ? <a href="/ShrihariResume.pdf" target='_blank'>
       <span className="font-bold text-slate-300">
         Download
       </span>
     </a></p>
+
+    <p className="text-slate-400 mb-2">Want to say Hi 👋 ? <a href={moreLinks.carrd} target='_blank'>
+      <span className="font-bold text-slate-300">
+        Say Hi
+      </span>
+    </a>
+    </p>
 
     {/* <p className="text-slate-400 mb-2"> View profile on <a href="https://angel.co/u/shrihari-uma" target='_blank'>
       <span className="font-bold text-slate-300">
