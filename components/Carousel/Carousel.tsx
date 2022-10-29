@@ -36,12 +36,12 @@ function CarouselContainer() {
   const rendered = carouselImagesArray.map((item, index) => <EachImage image={item.image} title={item.title} key={index.toString()} />)
 
   return (
-    <section className="flex items-center flex-col" style={{ minHeight: '70vh' }}>
-      <div className="text-center">
+    <section className="flex px-8 sm:px-16 flex-col" style={{ minHeight: '70vh' }}>
+      <div className="mt-4">
         <AboveTitle text="DallE AI" />
         <h1 className="text-3xl font-semibold  tracking-wide mb-6"> Glimpses</h1>
       </div>
-      <div className="flex gap-8 overflow-x-auto w-full px-8 sm:px-16">
+      <div className="flex g overflow-x-auto w-full gap-8">
         {rendered}
       </div>
     </section>
@@ -53,6 +53,7 @@ function EachImage({ image, title }: { image: number, title: string }) {
     <Tooltip title={title} arrow placement="bottom">
       <img src={`/dalle/${image}.jpeg`} width={350} height={350} className="rounded-xl shadow-md" />
     </Tooltip>
+
   );
 }
 

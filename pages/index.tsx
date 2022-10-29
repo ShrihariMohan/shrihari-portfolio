@@ -9,7 +9,6 @@ import Footer from '../components/Footer/footer'
 import AddToMailList from '../components/Container/addToMailList';
 import MedionAndForumContainer from '../components/Container/medionAndForumContainer'
 import NandhiAndMining from '../components/Project_Details/nandhiAndMining'
-import CarouselContainer from "../components/Carousel/Carousel";
 
 const Home: NextPage = () => {
   const projectsRef: any = useRef<HTMLDivElement>(null);
@@ -105,12 +104,9 @@ const Home: NextPage = () => {
             </section>
 
               <section>
-                <CarouselContainer />
+                <MedionAndForumContainer />
               </section>
 
-            <section>
-              <MedionAndForumContainer />
-            </section>
 
             <section>
               <Footer ref={aboutRef} />
