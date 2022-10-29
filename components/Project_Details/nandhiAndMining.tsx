@@ -17,10 +17,10 @@ function NandhiAndMining() {
     >
       <Grid
         container
-        className="flex justify-center items-center my-24 px-4 sm:px-0"
+        gap={4}
+        className="flex justify-center items-center my-24 px-6 sm:px-0"
       >
-        <Grid item xs={0} sm={1} />
-        <Grid item xs={12} sm={5} className="mb-8 mr-4">
+        <Grid item xs={12} sm={8} lg={5}>
           <AboveTitle text="Freelance" />
           <p className="text-3xl mb-4 font-bold tracking-wider">
             {" "}
@@ -52,7 +52,8 @@ function NandhiAndMining() {
         <Grid
           item
           xs={12}
-          sm={5}
+          sm={8}
+          lg={5}
           sx={{ textAlign: { xs: "center", sm: "unset" } }}
           className="rounded-md"
         >

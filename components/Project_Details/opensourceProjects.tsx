@@ -34,10 +34,11 @@ const OpenSourceProjects = React.forwardRef<HTMLDivElement>((props, ref) => {
         justifyContent="center"
         alignItems="center"
         ref={ref}
-        className="min-h-screen"
+        gap={4}
+        className="min-h-screen px-6 sm:px-0"
       >
-        <Grid item xs={0} sm={0} md={1} />
-        <Grid item xs={12} sm={8} md={5} mb={4} className="p-4">
+        <Grid item xs={0} lg={1} />
+        <Grid item xs={12} sm={8} md={5} lg={5} mb={4} justifyContent={{ xs: "center", lg: "unset" }}>
           <AboveTitle text="Open Source, Freelance" />
           <Title text="Squeeth Portal" />
           <div className=" drop-shadow-md  hover:scale-105 hover:transition-transform">
@@ -46,7 +47,7 @@ const OpenSourceProjects = React.forwardRef<HTMLDivElement>((props, ref) => {
                 src="/squeeth.jpeg"
                 width={450}
                 height={250}
-                className="rounded-lg"
+                className="rounded-lg w-full"
               />
             </a>
           </div>
@@ -87,7 +88,7 @@ const OpenSourceProjects = React.forwardRef<HTMLDivElement>((props, ref) => {
             />
           </Box>
         </Grid>
-        <Grid item xs={12} sm={8} md={5} mb={4} className=" p-4">
+        <Grid item xs={12} sm={8} md={5} lg={5} mb={4}>
           <AboveTitle text="Open Source" />
           <Title text="PvZ 2 Api" />
 
