@@ -23,7 +23,7 @@ enum sortOptions {
   Latest = 'Latest',
   MostViewed = 'Most Viewed',
   MostLiked = 'Most Liked',
-  Oldest = 'Oldest'
+  // Oldest = 'Oldest'
 }
 
 const Blogs: NextPage<props> = ({ data }: props) => {
@@ -73,11 +73,11 @@ const Blogs: NextPage<props> = ({ data }: props) => {
         })
         break
 
-      case sortOptions.Oldest:
-        data.sort((a, b) => {
-          return new Date(a.published_timestamp).getTime() - new Date(b.published_timestamp).getTime();
-        })
-        break;
+      // case sortOptions.Oldest:
+      //   data.sort((a, b) => {
+      //     return new Date(a.published_timestamp).getTime() - new Date(b.published_timestamp).getTime();
+      //   })
+      //   break;
 
     }
 
@@ -135,7 +135,7 @@ const Blogs: NextPage<props> = ({ data }: props) => {
       </div>
       <Grid container ref={blogsRef} className='sm:justify-center' pb={8}>
         {
-          data.slice(0, 4).map((blog: any, index) => {
+          data.slice(0, 6).map((blog: any, index) => {
             return (
               <Grid item key={index} sx={{ marginRight: { xs: 0 } }}>
                 <BlogCard obj={blog} key={index} />
