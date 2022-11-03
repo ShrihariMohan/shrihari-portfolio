@@ -98,7 +98,7 @@ function AddToMailList() {
                 <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-orange-500 relative inline-block">
                   <span className="relative text-slate-900"> Free Copy </span>
                 </span>
-                <span className="ml-2"> to your inbox </span>
+                <span className="ml-2"> to your inbox ! </span>
               </p>
             </Grid>
 
