@@ -130,8 +130,8 @@ function AddToMailList() {
             <Grid item xs={12} mt={1}>
               <p className="text-slate-400 mt-4">
                 I write content related to programming. I Have{" "}
-                <strong className="text-slate-200 ">385+</strong> followers on
-                <strong> dev </strong> and <strong className="text-slate-200 ">215+ </strong>on
+                <strong className="text-slate-200 "> 430+ </strong> followers on
+                <strong> dev </strong> and <strong className="text-slate-200 "> 225+ </strong>on
                 <strong>  medium </strong>.
               </p>
               <p className="text-slate-400 mt-2">
