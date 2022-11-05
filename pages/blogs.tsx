@@ -34,7 +34,7 @@ const Blogs: NextPage<props> = ({ data }: props) => {
   const blogsRef: any = useRef<HTMLElement>(null)
   const aboutRef: any = useRef<HTMLElement>(null)
 
-  const [sort, setSort] = useState<sortOptions>(sortOptions.MostLiked);
+  const [sort, setSort] = useState<sortOptions>(sortOptions.MostViewed);
 
   const onScrollToBlogs = () => {
     let block = 'start'
