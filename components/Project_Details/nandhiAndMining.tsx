@@ -59,9 +59,8 @@ function NandhiAndMining() {
         >
           <video
             src={VideoDemoLinks.nandhi}
-            width={500}
             controls
-            className="rounded-md block mx-auto  shadow-lg  hover:shadow-cyan-600/40"
+            className="rounded-md block mx-auto  shadow-lg w-full hover:shadow-cyan-600/40"
           ></video>
 
           <Box className="mt-2 mx-2 text-center">

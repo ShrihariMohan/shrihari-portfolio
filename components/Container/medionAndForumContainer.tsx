@@ -4,10 +4,16 @@ import Forum from "../Project_Details/forum";
 
 function MedionAndForumContainer() {
   return (
-    <Box className="flex justify-center gap-14 flex-wrap  mt-24 mb-4 px-8 ">
+    <Grid container
+      gap={4}
+      className="flex justify-center items-center my-24 px-6 sm:px-0">
+      <Grid item xs={12} sm={8} lg={5}>
       <Medion />
+      </Grid>
+      <Grid item xs={12} sm={8} lg={5}>
       <Forum />
-    </Box>
+      </Grid>
+    </Grid>
   );
 }
 

@@ -5,6 +5,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import Chips from "../UI components/chips"
 import AboveTitle from "../Typograpy/aboveTitle";
 import PrimaryButton from "../Buttons/primaryButton";
+import OutlinedButton from "../Buttons/outlinedButton";
 
 const stack = ['Angular Framework', 'Material', 'MongoDB', 'NodeJS', 'Express']
 
@@ -18,10 +19,13 @@ function Forum() {
     <Box mb={3}>
       <AboveTitle text="Silly Project" />
       <p className="text-3xl font-bold tracking-wider mb-3">Forum</p>
+      <p className="text-slate-200 font-light mb-6 w-full">
+        The Social Media App with Google Auth 2.0 using passport js, Follow People , Create and edit Posts and Let your followers know what you're upto!
+      </p>
       <video src={VideoDemoLinks.forum}
-        width={500} height={500} controls className="block  mx-auto  sm:mx-0 rounded-md mb-1  shadow-lg  hover:shadow-cyan-600/40">
+        controls className="block w-full mx-auto  sm:mx-0 rounded-md mb-1  shadow-lg  hover:shadow-cyan-600/40">
       </video>
-      <Box className="mb-4">
+      <Box className="mb-4 text-center">
         {
           stack.map((each, ind) => {
             return (
@@ -30,12 +34,10 @@ function Forum() {
           })
         }
       </Box>
-      <p className="text-slate-200 font-light mb-6 max-w-[500px]">
-        The Social Media App with Google Auth 2.0 using passport js, Follow People , Create and edit Posts and Let your followers know what you're upto!
-      </p>
-      <Box sx={{ textAlign: { xs: 'center', sm: 'unset' } }}>
 
-        <PrimaryButton text="View Github" icon={<GitHubIcon className="ml-1 text-[22px]" />} onClick={onClick} />
+      <Box className="text-center">
+
+        <OutlinedButton text="View Github" icon={<GitHubIcon className="ml-1 text-[22px]" />} onClick={onClick} />
       </Box>
 
     </Box>

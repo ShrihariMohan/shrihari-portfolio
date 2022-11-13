@@ -22,12 +22,11 @@ function Landing({ onSeeProjects }: { onSeeProjects: Function }) {
     <motion.div
     >
       <Grid container className="px-4 sm:px-0 flex justify-center items-center" sx={{ height: 'calc(100vh - 64px)' }}>
-        <Grid item xs={0} sm={1} />
         <Grid item xs={12} sm={8} md={5} >
           <Box sx={{ textAlign: { xs: 'center', sm: 'left' } }} >
 
             <AboveTitle text="Web developer" />
-            <h1 className="text-3xl font-semibold mt-2 tracking-wide mb-2">
+            <h1 className="text-3xl sm:text-5xl font-semibold mt-2 tracking-wide mb-2">
               I Stack your Problems and pop 🎉 until its Empty
             </h1>
 
@@ -37,7 +36,7 @@ function Landing({ onSeeProjects }: { onSeeProjects: Function }) {
 
             </section>
 
-            <div className="flex gap-4 justify-center sm:justify-start">
+            <div className="flex gap-4 justify-center sm:justify-start flex-wrap">
               <PrimaryButton text="See Contributions" icon={<RemoveRedEyeOutlinedIcon className="align-top" />} onClick={onSeeProjects} />
               <OutlinedButton text="View Blogs" icon={<BookOutlinedIcon className="align-top" />} onClick={() => { router.push('/blogs') }} />
             </div>
@@ -45,13 +44,12 @@ function Landing({ onSeeProjects }: { onSeeProjects: Function }) {
           </Box>
 
         </Grid>
-        <Grid item xs={0} sm={4} sx={{ display: { xs: 'none ', md: 'block' } }} justifySelf='center' className="text-right">
+        <Grid item xs={0} sm={4} md={5} sx={{ display: { xs: 'none ', md: 'block' } }} justifySelf='center' className="text-right">
           <picture>
-            <Image className="hidden" src='/landing.svg' width={'500'} height={'500'} alt='illustration space ship abducting' />
+            <img className="w-full" src='/landing.svg' alt='illustration of a man with solving puzzle cube' />
             <p className="text-slate-500 text-xs text-center"> Art from <a className="text-slate-400 underline" href="https://undraw.co/" target='_blank' rel="noreferrer"> undraw</a></p>
           </picture>
         </Grid>
-        <Grid item xs={0} sm={1} />
 
       </Grid>
     </motion.div >
