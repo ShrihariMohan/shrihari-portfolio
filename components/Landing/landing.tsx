@@ -10,6 +10,7 @@ import BookOutlinedIcon from '@mui/icons-material/BookOutlined';
 import { useRouter } from 'next/router';
 import { links } from "../../constants/contactLinks";
 import { addSubscriber } from "../../services/subscriberService";
+import H1 from "../UI components/H1";
 
 
 function Landing({ onSeeProjects }: { onSeeProjects: Function }) {
@@ -26,11 +27,9 @@ function Landing({ onSeeProjects }: { onSeeProjects: Function }) {
           <Box sx={{ textAlign: { xs: 'center', sm: 'left' } }} >
 
             <AboveTitle text="Web developer" />
-            <h1 className="text-3xl sm:text-5xl font-semibold mt-2 tracking-wide mb-2">
-              I Stack your Problems and pop 🎉 until its Empty
-            </h1>
+            <H1 text="I read Documentation first, then only stack overflow." highlight={[2]} > </H1>
 
-            <section className="flex justify-center sm:justify-start mb-4">
+            <section className="flex justify-center sm:justify-start my-4">
               <p className="mr-3 text-slate-400">Follow <a href={links.devto} target='_blank' className="text-cyan-500">@Devto</a></p>
               <p className="text-slate-400">Follow <a href={links.medium} target='_blank' className="text-cyan-500">@Medium </a></p>
 
