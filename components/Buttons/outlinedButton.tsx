@@ -19,7 +19,7 @@ const OutlinedButton: FunctionComponent<OutlinedButtonProps> = ({ text, onClick,
     <motion.button
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
-      className={" border-2 rounded-lg p-3 cursor-pointer drop-shadow-lg " + Variants[variant] + (fullWidth ? " w-full " : "")}
+      className={" border-[3px] rounded-lg p-3 cursor-pointer drop-shadow-lg " + Variants[variant] + (fullWidth ? " w-full " : "")}
       onClick={onClick}
     >
       {icon ? icon : ''}  {text}

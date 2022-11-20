@@ -34,20 +34,17 @@ const OpenSourceProjects = React.forwardRef<HTMLDivElement>((props, ref) => {
         justifyContent="center"
         alignItems="center"
         ref={ref}
-        gap={4}
+        gap={8}
         className="min-h-screen px-6 sm:px-0"
       >
-        <Grid item xs={0} lg={1} />
-        <Grid item xs={12} sm={8} md={5} lg={5} mb={4} justifyContent={{ xs: "center", lg: "unset" }}>
+        <Grid item xs={12} sm={8} md={5} mb={4} justifyContent={{ xs: "center", lg: "unset" }}>
           <AboveTitle text="Open Source, Freelance" />
           <Title text="Squeeth Portal" />
           <div className=" drop-shadow-md  hover:scale-105 hover:transition-transform">
             <a href="https://www.squeethportal.xyz/">
-              <Image
+              <img
                 src="/squeeth.jpeg"
-                width={450}
-                height={250}
-                className="rounded-lg w-full"
+                className="rounded-lg w-full h-80 object-cover"
               />
             </a>
           </div>
@@ -88,18 +85,15 @@ const OpenSourceProjects = React.forwardRef<HTMLDivElement>((props, ref) => {
             />
           </Box>
         </Grid>
-        <Grid item xs={12} sm={8} md={5} lg={5} mb={4}>
+        <Grid item xs={12} sm={8} md={5} mb={4}>
           <AboveTitle text="Open Source" />
           <Title text="PvZ 2 Api" />
 
           <div className=" drop-shadow-md  hover:scale-105 hover:transition-transform ">
             <a href="https://pvz-2-api.vercel.app/">
-              <Image
+              <img
                 src="/pvz.jpeg"
-                width={450}
-                height={250}
-                objectFit="cover"
-                className="rounded-lg"
+                className="rounded-lg w-full h-80 object-cover"
               />
             </a>
           </div>
