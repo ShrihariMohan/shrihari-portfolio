@@ -43,11 +43,11 @@ const Footer = React.forwardRef<HTMLDivElement>((props, ref) => {
           <DevTo />
           <MediumIcon />
           <Twitter />
-          {/* <Notion /> */}
-          <Reddit />
+          <Notion />
+          {/* <Reddit /> */}
           {/* <Facebook /> */}
           <StackOverflow />
-          {/* <Email /> */}
+          <Email />
           {/* <Buttermilk /> */}
         </Box>
         <p className="text-center text-slate-600 mt-2">
