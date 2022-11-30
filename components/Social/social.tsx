@@ -39,9 +39,12 @@ function Reddit({ }) {
 function Notion() {
   return (
     <Tooltip title="Notion" arrow placement="top">
-      <a className="bg-white" >
-        <Image src='/notion.svg' height={18} width={18} />
-      </a>
+      <img
+        className="align-middle bg-white"
+        src="/notion.png"
+        width={22}
+        height={22}
+      />
     </Tooltip>
   )
 }

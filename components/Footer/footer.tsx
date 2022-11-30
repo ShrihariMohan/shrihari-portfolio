@@ -43,7 +43,7 @@ const Footer = React.forwardRef<HTMLDivElement>((props, ref) => {
           <DevTo />
           <MediumIcon />
           <Twitter />
-          <Notion />
+          {/* <Notion /> */}
           {/* <Reddit /> */}
           {/* <Facebook /> */}
           <StackOverflow />
