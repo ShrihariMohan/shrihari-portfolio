@@ -64,14 +64,11 @@ function AddToMailList() {
         alignItems="center"
         className="flex-col-reverse sm:flex-row   sm:p-6 bg-slate-900  min-h-screen"
       >
-        <Grid item xs={0} sm={0} md={1} />
-        <Grid item xs={12} sm={8} md={5} mb={4} className=" p-4">
+        <Grid item xs={12} sm={8} md={6} mb={4} className=" p-4">
           <picture>
-            <Image
-              className="hidden"
+            <img
+              className="w-full"
               src="/mail_subscriber.svg"
-              height={500}
-              width={500}
               alt="Subscribe for free articles"
             />
             <p className="text-slate-500 text-xs text-center">

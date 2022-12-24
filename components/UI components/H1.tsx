@@ -8,7 +8,7 @@ interface H1 {
 const H1: React.FC<H1> = ({ text, highlight = [] }) => {
   const elements = HighlightedText({ text, highlight })
   return (
-    <h1 className="text-4xl sm:text-6xl tracking-wide font-light leading-[2.8rem] sm:leading-[3.5rem]">
+    <h1 className="text-4xl sm:text-5xl tracking-wide font-light leading-[2.8rem] sm:leading-[3.5rem]">
       {elements}
     </h1>
   )

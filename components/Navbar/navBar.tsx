@@ -12,7 +12,7 @@ type props = {
 }
 function NavBar({ onSeeAbout, showNavItems = true, showBlogsItems = true, showAboutItems = true, showRandomItems = true }: props) {
   return (
-    <nav className={'py-4 sm:px-8 md:px-12 px-6 text-lg sticky top-0 h-[60px] backdrop-blur-md	z-10 '} >
+    <nav className={'py-4 sm:px-8 md:px-12  px-6 text-lg sticky top-0 h-[60px] backdrop-blur-md	z-10 '} >
       <ul className='flex justify-between items-center'>
         <Link href='/'>
           <li className='flex items-center tracking-widest text-cyan-500 font-extrabold cursor-pointer'>

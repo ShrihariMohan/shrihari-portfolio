@@ -43,7 +43,7 @@ function Landing({ onSeeProjects }: { onSeeProjects: Function }) {
           </Box>
 
         </Grid>
-        <Grid item xs={0} sm={4} md={5} sx={{ display: { xs: 'none ', md: 'block' } }} justifySelf='center' className="text-right">
+        <Grid item xs={0} sm={4} md={6} sx={{ display: { xs: 'none ', md: 'block' } }} justifySelf='center' className="text-right">
           <picture>
             <img className="w-full" src='/landing.svg' alt='illustration of a man with solving puzzle cube' />
             <p className="text-slate-500 text-xs text-center"> Art from <a className="text-slate-400 underline" href="https://undraw.co/" target='_blank' rel="noreferrer"> undraw</a></p>

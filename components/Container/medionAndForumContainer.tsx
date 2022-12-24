@@ -13,6 +13,7 @@ function MedionAndForumContainer() {
       <Grid item xs={12} sm={8} lg={5}>
       <Forum />
       </Grid>
+
     </Grid>
   );
 }

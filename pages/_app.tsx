@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <ThemeProvider theme={darkTheme}>
-        <NextNProgress color='#0891b2' options={{ showSpinner: false, easing: "ease" }} />
+        <NextNProgress color='#f97316' options={{ showSpinner: false, easing: "ease" }} />
         <Component {...pageProps} />
       </ThemeProvider>
     </>
