@@ -12,28 +12,29 @@ function NandhiAndMining() {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
       style={{ minHeight: '60vh' }}
     >
       <Grid
         container
         gap={4}
-        className="flex justify-center items-center my-24 px-6 sm:px-0"
+        className="flex justify-center items-center my-24 p-6 sm:px-0"
       >
-        <Grid item xs={12} sm={8} lg={5}>
+        <Grid
+          item
+          xs={11}
+          md={7}
+          lg={9}
+          sx={{ textAlign: { xs: "center", sm: "unset" } }}
+          className="rounded-md"
+        >
           <AboveTitle text="Freelance" />
           <p className="text-3xl mb-4 font-bold tracking-wider">
             {" "}
             Nandhi Mining & Company{" "}
           </p>
           <p className="text-slate-200 font-light mb-6">
-            {" "}
             It is one of the players in CNC Milling Machine, Hydraulic Milling
-            Machine to name a few.{" "}
-          </p>
-          <p className=" tracking-wider mb-2"> About Website </p>
-          <p className="text-slate-200 font-light">
-            {" "}
+            Machine to name a few.
             This is a website that helps the company to store all their
             Finances, Bills, Employees Details and their Payments. This is a
             private organization so github repo is private.
@@ -47,16 +48,6 @@ function NandhiAndMining() {
               For more information visit Notion{" "}
             </a>{" "}
           </p>
-        </Grid>
-
-        <Grid
-          item
-          xs={12}
-          sm={8}
-          lg={5}
-          sx={{ textAlign: { xs: "center", sm: "unset" } }}
-          className="rounded-md"
-        >
           <video
             src={VideoDemoLinks.nandhi}
             controls

@@ -22,14 +22,6 @@ function NavBar({ onSeeAbout, showNavItems = true, showBlogsItems = true, showAb
         </Link>
         {
           showNavItems && <div className='flex gap-4 sm:gap-8'>
-
-            {
-              showRandomItems &&
-              <Link href='/random' >
-                <span className="cursor-pointer tracking-widest font-bold" style={{ fontFamily: 'Satisfy, cursive' }}> Random </span>
-              </Link>
-            }
-
             {
               showBlogsItems &&
               <Link href='/blogs' >
@@ -42,6 +34,13 @@ function NavBar({ onSeeAbout, showNavItems = true, showBlogsItems = true, showAb
               <button onClick={onSeeAbout} className="cursor-pointer tracking-widest font-bold" style={{ fontFamily: 'Satisfy, cursive' }}>
                 About
               </button>
+            }
+
+            {
+              showRandomItems &&
+              <Link href='/more' >
+                <span className="cursor-pointer tracking-widest font-bold" style={{ fontFamily: 'Satisfy, cursive' }}> More </span>
+              </Link>
             }
           </div>
         }

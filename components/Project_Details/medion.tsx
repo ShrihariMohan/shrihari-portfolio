@@ -35,7 +35,7 @@ function Medion() {
 
 
       <Box className="text-center">
-        <OutlinedButton
+        <PrimaryButton
           text="View Github"
           icon={<GitHubIcon className="ml-1 text-[22px]" />}
           onClick={onClick}

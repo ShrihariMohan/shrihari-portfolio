@@ -27,17 +27,16 @@ const OpenSourceProjects = React.forwardRef<HTMLDivElement>((props, ref) => {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
     >
       <Grid
         container
         justifyContent="center"
         alignItems="center"
         ref={ref}
-        gap={8}
+        gap={4}
         className="min-h-screen px-6 sm:px-0"
       >
-        <Grid item xs={12} sm={8} md={5} mb={4} justifyContent={{ xs: "center", lg: "unset" }}>
+        <Grid item xs={12} sm={10} md={5} mb={4} justifyContent={{ xs: "center", lg: "unset" }}>
           <AboveTitle text="Open Source, Freelance" />
           <Title text="Squeeth Portal" />
           <div className=" drop-shadow-md  hover:scale-105 hover:transition-transform">
@@ -85,7 +84,7 @@ const OpenSourceProjects = React.forwardRef<HTMLDivElement>((props, ref) => {
             />
           </Box>
         </Grid>
-        <Grid item xs={12} sm={8} md={5} mb={4}>
+        <Grid item xs={12} sm={10} md={5} mb={4}>
           <AboveTitle text="Open Source" />
           <Title text="PvZ 2 Api" />
 

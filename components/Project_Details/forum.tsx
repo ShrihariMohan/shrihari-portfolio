@@ -37,7 +37,7 @@ function Forum() {
 
       <Box className="text-center">
 
-        <OutlinedButton text="View Github" icon={<GitHubIcon className="ml-1 text-[22px]" />} onClick={onClick} />
+        <PrimaryButton text="View Github" icon={<GitHubIcon className="ml-1 text-[22px]" />} onClick={onClick} />
       </Box>
 
     </Box>

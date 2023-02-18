@@ -8,7 +8,7 @@ const carouselImagesArray = [
   },
   {
     image: 2,
-    title: 'Designing an Vivaldi Antenna in ISRO'
+    title: 'Designing an Ultrawide Vivaldi Antenna '
   },
   {
     image: 5,
@@ -17,10 +17,6 @@ const carouselImagesArray = [
   {
     image: 6,
     title: 'Enjoying Music everyday'
-  },
-  {
-    image: 0,
-    title: 'Riding Bike'
   },
   {
     image: 3,

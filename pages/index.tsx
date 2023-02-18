@@ -9,6 +9,7 @@ import Footer from '../components/Footer/footer'
 import AddToMailList from '../components/Container/addToMailList';
 import MedionAndForumContainer from '../components/Container/medionAndForumContainer'
 import NandhiAndMining from '../components/Project_Details/nandhiAndMining'
+import ShowCaseContainer from '../components/Container/showCaseContainer'
 
 const Home: NextPage = () => {
   const projectsRef: any = useRef<HTMLDivElement>(null);
@@ -94,6 +95,10 @@ const Home: NextPage = () => {
             <section>
               <OpenSourceProjects ref={projectsRef} />
             </section>
+
+              <section>
+                <ShowCaseContainer videoLink='' title='' description='Ghost CSS Detector' />
+              </section>
 
             <section>
               <AddToMailList />

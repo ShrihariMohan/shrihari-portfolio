@@ -11,6 +11,8 @@ function BlogLanding({ onViewBlogs }: { onViewBlogs?: Function }) {
 
   return (
     <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
     >
       <Grid container className="px-4 sm:px-0 flex justify-center items-center" sx={{ height: 'calc(100vh - 64px)' }}>
         <Grid item xs={0} sm={2} />
