@@ -7,7 +7,6 @@ import SplashScreen from '../components/UI components/splashScreen'
 import OpenSourceProjects from '../components/Project_Details/opensourceProjects'
 import Footer from '../components/Footer/footer'
 import AddToMailList from '../components/Container/addToMailList';
-import MedionAndForumContainer from '../components/Container/medionAndForumContainer'
 import NandhiAndMining from '../components/Project_Details/nandhiAndMining'
 import ShowCaseContainer from '../components/Container/showCaseContainer'
 
@@ -101,17 +100,8 @@ const Home: NextPage = () => {
               </section>
 
             <section>
-              <AddToMailList />
-            </section>
-
-            <section>
               <NandhiAndMining />
             </section>
-
-              <section>
-                <MedionAndForumContainer />
-              </section>
-
 
             <section>
               <Footer ref={aboutRef} />

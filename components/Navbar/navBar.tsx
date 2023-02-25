@@ -10,6 +10,7 @@ type props = {
   showRandomItems?: boolean,
 
 }
+
 function NavBar({ onSeeAbout, showNavItems = true, showBlogsItems = true, showAboutItems = true, showRandomItems = true }: props) {
   return (
     <nav className={'py-4 sm:px-8 md:px-12  px-6 text-lg sticky top-0 h-[60px] backdrop-blur-md	z-10 '} >
@@ -22,26 +23,17 @@ function NavBar({ onSeeAbout, showNavItems = true, showBlogsItems = true, showAb
         </Link>
         {
           showNavItems && <div className='flex gap-4 sm:gap-8'>
-            {
-              showBlogsItems &&
               <Link href='/blogs' >
-                  <span className="cursor-pointer tracking-widest font-bold" style={{ fontFamily: 'Satisfy, cursive' }}> Blogs </span>
-              </Link>
-            }
+              <span className="cursor-pointer tracking-widest font-bold" style={{ fontFamily: 'Satisfy, cursive' }}> Blogs </span>
+            </Link>
 
-            {
-              showAboutItems &&
-              <button onClick={onSeeAbout} className="cursor-pointer tracking-widest font-bold" style={{ fontFamily: 'Satisfy, cursive' }}>
-                About
-              </button>
-            }
-
-            {
-              showRandomItems &&
               <Link href='/more' >
                 <span className="cursor-pointer tracking-widest font-bold" style={{ fontFamily: 'Satisfy, cursive' }}> More </span>
-              </Link>
-            }
+            </Link>
+
+            <button onClick={onSeeAbout} className="cursor-pointer tracking-widest font-bold" style={{ fontFamily: 'Satisfy, cursive' }}>
+              About
+            </button>
           </div>
         }
       </ul>

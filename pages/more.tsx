@@ -2,6 +2,7 @@ import { NextPage } from "next"
 import Image from "next/image"
 import { useRef } from "react"
 import CarouselContainer from "../components/Carousel/Carousel"
+import MedionAndForumContainer from "../components/Container/medionAndForumContainer"
 import Footer from "../components/Footer/footer"
 import NavBar from "../components/Navbar/navBar"
 import AboveTitle from "../components/Typograpy/aboveTitle"
@@ -20,9 +21,14 @@ const Random: NextPage = () => {
     <>
       <NavBar showRandomItems={false} onSeeAbout={onScrollToABout} />
 
+      <section>
+        <MedionAndForumContainer />
+      </section>
+
       <section className="p-4">
         <CarouselContainer />
       </section>
+
       <section style={{ minHeight: '70vh' }} className="flex flex-col justify-center items-center">
         <AboveTitle text="Wabba Lubba Dubb Dubb" />
         <p className="text-3xl font-semibold  tracking-wide mb-6"> More things coming soon 🛠️</p>

@@ -22,8 +22,8 @@ function NandhiAndMining() {
         <Grid
           item
           xs={11}
-          md={7}
-          lg={9}
+          md={8}
+          lg={10}
           sx={{ textAlign: { xs: "center", sm: "unset" } }}
           className="rounded-md"
         >

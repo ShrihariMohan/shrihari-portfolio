@@ -7,10 +7,10 @@ function MedionAndForumContainer() {
     <Grid container
       gap={4}
       className="flex justify-center items-center my-24 px-6 sm:px-0">
-      <Grid item xs={12} sm={8} lg={5}>
+      <Grid item xs={12} sm={9} lg={5}>
       <Medion />
       </Grid>
-      <Grid item xs={12} sm={8} lg={5}>
+      <Grid item xs={12} sm={9} lg={5}>
       <Forum />
       </Grid>
 
