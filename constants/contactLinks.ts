@@ -17,7 +17,8 @@ export const githubLinks = {
   forum: 'https://github.com/ShrihariMohan/forum',
   googleAuthenticator: 'https://github.com/ShrihariMohan/Google-Authenticator',
   budgety: 'https://github.com/ShrihariMohan/BudgetApplication',
-  piggame: 'https://github.com/ShrihariMohan/PiggyGame'
+  piggame: 'https://github.com/ShrihariMohan/PiggyGame',
+  ghostcss: 'https://github.com/ShrihariMohan/ghost-css-detector'
 }
 
 export const moreLinks = {
@@ -26,5 +27,6 @@ export const moreLinks = {
   company: 'https://www.linkedin.com/company/denovo-systems/',
   music: 'https://music.youtube.com/playlist?list=PLZFuu_CjnMTXMZPlXB10YbupUl8lhZBsc&feature=share',
   form: 'https://forms.gle/9YXHDV2oQu7bZ3u7A',
-  carrd: 'https://shrihari.carrd.co/'
+  carrd: 'https://shrihari.carrd.co/',
+  ghostCssExtension: 'https://chrome.google.com/webstore/detail/ghost-css-detector/pphfihfikeimkmnjielhjjgapkmnimnm'
 }

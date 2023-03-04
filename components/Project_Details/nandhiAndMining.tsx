@@ -23,7 +23,7 @@ function NandhiAndMining() {
           item
           xs={11}
           md={8}
-          lg={10}
+          lg={9}
           sx={{ textAlign: { xs: "center", sm: "unset" } }}
           className="rounded-md"
         >

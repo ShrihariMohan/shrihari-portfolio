@@ -9,6 +9,7 @@ import Footer from '../components/Footer/footer'
 import AddToMailList from '../components/Container/addToMailList';
 import NandhiAndMining from '../components/Project_Details/nandhiAndMining'
 import ShowCaseContainer from '../components/Container/showCaseContainer'
+import { VideoDemoLinks } from '../constants/videoDemoLinks'
 
 const Home: NextPage = () => {
   const projectsRef: any = useRef<HTMLDivElement>(null);
@@ -87,17 +88,18 @@ const Home: NextPage = () => {
           <>
             <NavBar onSeeAbout={onScrollToabout} />
 
-            <section className=" mb-24">
+              <section className=" mb-12">
               <Landing onSeeProjects={onScrollToProjects} />
             </section>
 
-            <section>
-              <OpenSourceProjects ref={projectsRef} />
-            </section>
+              <section>
+                <ShowCaseContainer videoLink={VideoDemoLinks.ghostCss} title='Ghost CSS Detector' aboveTitle='Chrome Extension' />
+              </section>
 
               <section>
-                <ShowCaseContainer videoLink='' title='' description='Ghost CSS Detector' />
+                <OpenSourceProjects ref={projectsRef} />
               </section>
+
 
             <section>
               <NandhiAndMining />
