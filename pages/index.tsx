@@ -76,6 +76,7 @@ const Home: NextPage = () => {
           href="https://img.icons8.com/color/48/000000/morty-smith.png"
           type="image/x-icon"
         ></link>
+        <script src="https://docsai.app/embed.min.js" project-id="clftgs4b3000bmc0utkma7jbe" primary-color="#ea580c" async></script>
       </Head>
 
       <main
