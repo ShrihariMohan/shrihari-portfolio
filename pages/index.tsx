@@ -6,7 +6,6 @@ import { useEffect, useRef, useState } from 'react'
 import SplashScreen from '../components/UI components/splashScreen'
 import OpenSourceProjects from '../components/Project_Details/opensourceProjects'
 import Footer from '../components/Footer/footer'
-import AddToMailList from '../components/Container/addToMailList';
 import NandhiAndMining from '../components/Project_Details/nandhiAndMining'
 import ShowCaseContainer from '../components/Container/showCaseContainer'
 import { VideoDemoLinks } from '../constants/videoDemoLinks'
@@ -93,12 +92,12 @@ const Home: NextPage = () => {
               <Landing onSeeProjects={onScrollToProjects} />
             </section>
 
-            <section>
-              <ShowCaseContainer videoLink={VideoDemoLinks.ghostCss} title='Ghost CSS Detector' aboveTitle='Chrome Extension' />
-            </section>
+              <section>
+                <ShowCaseContainer videoLink={VideoDemoLinks.ghostCss} title='Ghost CSS Detector' aboveTitle='Chrome Extension' />
+              </section>
 
             <section>
-              <OpenSourceProjects ref={projectsRef} />
+                <OpenSourceProjects ref={projectsRef} />
             </section>
 
 
