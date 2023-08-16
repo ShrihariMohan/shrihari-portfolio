@@ -1,7 +1,6 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import NextNProgress from "nextjs-progressbar";
-import { Analytics } from '@vercel/analytics/react';
 
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
@@ -19,7 +18,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         <NextNProgress color='#f97316' options={{ showSpinner: false, easing: "ease" }} />
         <Component {...pageProps} />
       </ThemeProvider>
-      <Analytics />
     </>
   )
 }
