@@ -75,6 +75,7 @@ const Home: NextPage = () => {
           href="https://img.icons8.com/color/48/000000/morty-smith.png"
           type="image/x-icon"
         ></link>
+        <script src="https://beamanalytics.b-cdn.net/beam.min.js" data-token="76cd1f7a-b81d-44fd-b29f-462581d4dc0a" async></script>
         <script src="https://docsai.app/embed.min.js" project-id="clftgs4b3000bmc0utkma7jbe" primary-color="#00acc1" async></script>
       </Head>
 
@@ -92,12 +93,12 @@ const Home: NextPage = () => {
               <Landing onSeeProjects={onScrollToProjects} />
             </section>
 
-              <section>
-                <ShowCaseContainer videoLink={VideoDemoLinks.ghostCss} title='Ghost CSS Detector' aboveTitle='Chrome Extension' />
-              </section>
+            <section>
+              <ShowCaseContainer videoLink={VideoDemoLinks.ghostCss} title='Ghost CSS Detector' aboveTitle='Chrome Extension' />
+            </section>
 
             <section>
-                <OpenSourceProjects ref={projectsRef} />
+              <OpenSourceProjects ref={projectsRef} />
             </section>
 
 
